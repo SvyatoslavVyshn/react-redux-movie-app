@@ -1,14 +1,42 @@
-.movie-container{
     .movie-info{
-        width: 80%;
+        width: 90%;
         overflow: hidden;
         margin: 0 auto;
-        
+        margin-bottom: 20px;
+        border: 1px solid #d3d3d3;
+        border-radius: 10px;
+        box-shadow: 2px 4px 8px #000;
+
+
+        &:hover{
+            box-shadow: 4px 6px 10px #000;
+        }
+
+        .fav-btn{
+            margin: 0 auto;
+        }
+
         .title{
+            width: 100%;
+            padding: 10px;
+            max-height: 40px;
             font-size: 25px;
         }
         .poster{
-            width: 50%;
+            width: 100%;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        .genres{
+            p{
+                float: left;
+                margin-left:10px;
+                padding: 5px;
+                background-color: #9F5BAD;
+                color: white;
+                border-radius: 10px; 
+                cursor: pointer;
+            }
         }
     }
-}

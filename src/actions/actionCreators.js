@@ -1,7 +1,11 @@
 import { RECEIVE_POPULAR_MOVIES, 
          RECEIVE_POPULAR_MOVIES_ERROR, 
-         RECEIVE_POSTER, 
-         RECEIVE_POSTER_ERROR } from '../constants/constants';
+         RECEIVE_DETAIL, 
+         RECEIVE_DETAIL_ERROR,
+         RECEIVE_RECOMMENDATIONS,
+         RECEIVE_RECOMMENDATIONS_ERROR,
+         RECEIVE_GENRES,
+         RECEIVE_GENRES_ERROR } from '../constants/constants';
 
 import axios from 'axios';
 
@@ -21,3 +25,39 @@ export function getPopularMovies () {
     }
 }
 
+
+export function getMoviesDetail (movieID) {
+    return function(dispatch) {
+        axios.get(`${API_URL}${movieID}?api_key=${API_KEY}&language=en-US`)
+            .then((res) => {
+                dispatch({type:RECEIVE_DETAIL, payload: res.data})
+            })
+            .catch((err) => {
+                dispatch({type: RECEIVE_DETAIL_ERROR, payload: err})
+            })
+    }
+}
+
+export function getRecommendations (movieID) {
+    return function(dispatch) {
+        axios.get(`${API_URL}${movieID}/recommendations?api_key=${API_KEY}&language=en-US`)
+            .then((res) => {
+                dispatch({type: RECEIVE_RECOMMENDATIONS, payload: res.data})
+            })
+            .catch((err) => {
+                dispatch({type: RECEIVE_RECOMMENDATIONS_ERROR, payload: err})
+            })
+    }
+}
+
+export function getGenres () {
+    return function(dispatch) {
+        axios.get('https://api.themoviedb.org/3/genre/movie/list?api_key=5d9af60e2f284c1aa7133ac326b0cbd4&language=en-US')
+            .then((res) => {
+                dispatch({type: RECEIVE_GENRES, payload: res.data})
+            })
+            .catch((err) => {
+                dispatch({type: RECEIVE_GENRES_ERROR, payload: err})
+            })
+    }
+}

@@ -5,7 +5,10 @@ import Main from './Main.jsx';
 
 function mapStateToProps (state) {
   return {
-    movies: state.movies.movies
+    movies: state.movies.movies,
+    detail: state.detail.detail,
+    recommendations: state.recommendations.recommendations,
+    genres: state.genres.genres
   }
 }
 
