@@ -20,7 +20,7 @@ class Nav extends Component {
             padding: '10px'
         };
         return(
-                <div className="navigation">
+                <div className="navigation navbar-fixed-top">
                     <ul className="nav-items-container">
                         <li className="nav-item">
                             <IndexLink to="/" activeClassName="active" style={linkStyle}>

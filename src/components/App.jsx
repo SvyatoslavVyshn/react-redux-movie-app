@@ -8,7 +8,8 @@ function mapStateToProps (state) {
     movies: state.movies.movies,
     detail: state.detail.detail,
     recommendations: state.recommendations.recommendations,
-    genres: state.genres.genres
+    genres: state.genres.genres,
+    favs: state.favs
   }
 }
 

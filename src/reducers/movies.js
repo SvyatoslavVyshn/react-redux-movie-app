@@ -19,8 +19,8 @@ function movies (state = initialState, action){
         case RECEIVE_POPULAR_MOVIES: {
             return{
                 ...state,
+                movies: [...state.movies, ...action.payload.results],
                 fetched: true,
-                movies:action.payload
             }
             break;
         }

@@ -5,17 +5,17 @@ import { RECEIVE_POPULAR_MOVIES,
          RECEIVE_RECOMMENDATIONS,
          RECEIVE_RECOMMENDATIONS_ERROR,
          RECEIVE_GENRES,
-         RECEIVE_GENRES_ERROR } from '../constants/constants';
+         RECEIVE_GENRES_ERROR,
+         ADD_TO_FAV } from '../constants/constants';
 
 import axios from 'axios';
 
 const API_URL = "https://api.themoviedb.org/3/movie/";
-const API_KEY = "5d9af60e2f284c1aa7133ac326b0cbd4";
-const POSTER_URL = "https://image.tmdb.org/t/p/w500/"; 
+const API_KEY = "5d9af60e2f284c1aa7133ac326b0cbd4"; 
 
-export function getPopularMovies () {
+export function getPopularMovies (page) {
     return function(dispatch) {
-        axios.get(`${API_URL}popular?api_key=${API_KEY}&language=en-US`)
+        axios.get(`${API_URL}popular?api_key=${API_KEY}&language=en-US&page=${page}`)
             .then((res) => {
                 dispatch({type:RECEIVE_POPULAR_MOVIES, payload: res.data})
             })
@@ -59,5 +59,13 @@ export function getGenres () {
             .catch((err) => {
                 dispatch({type: RECEIVE_GENRES_ERROR, payload: err})
             })
+    }
+}
+
+
+export function addToFav (item){
+    return{
+        type: ADD_TO_FAV,
+        item
     }
 }
