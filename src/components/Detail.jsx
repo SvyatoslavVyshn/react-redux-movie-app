@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 
 class Detail extends Component{
-    componentDidMount(){
+    componentWillMount(){
         const { movie } = this.props;
         this.props.getMoviesDetail(movie.id);
     }
     render(){
+        const { movie } = this.props;
         const { detail } = this.props;
         const posterURL = `https://image.tmdb.org/t/p/w500/${detail.poster_path}`;
         if(!detail){

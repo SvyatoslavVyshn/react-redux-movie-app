@@ -20,9 +20,9 @@ ReactDOM.render(
         <Router history={history}>
             <Route path="/" component={App} >
                 <IndexRoute component={Welcome} />
-                <Route path="/about" component={AboutPage} />
-                <Route path="/movies" component={MoviesPage} />
-                <Route path="/movies/:movieId" component={MovieDetail} />
+                <Route path="about" component={AboutPage} />
+                <Route path="movies" component={MoviesPage} />
+                <Route path="movies/:movieId" component={MovieDetail} />
             </Route>
         </Router>
     </Provider>, document.getElementById('app'));

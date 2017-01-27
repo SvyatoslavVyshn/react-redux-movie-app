@@ -5,7 +5,7 @@ class Genres extends Component{
         const { genres } = this.props;
         const { genreID } = this.props;
         const genre = genres.filter( (genre) => genre.id === genreID );
-        return(
+            return(
             <div className="genres">
             <p>{genre[0].name}</p>
             </div>

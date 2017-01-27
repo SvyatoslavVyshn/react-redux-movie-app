@@ -6,6 +6,7 @@ import detail from './detail';
 import recommendations from './recommendations';
 import genres from './genres';
 import favs from './favs';
+import search from './search';
 
 const rootReducer = combineReducers({movies, favs, detail, recommendations, genres, routing: routerReducer});
 

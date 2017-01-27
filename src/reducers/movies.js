@@ -1,4 +1,4 @@
-import { RECEIVE_POPULAR_MOVIES_ERROR, RECEIVE_POPULAR_MOVIES } from '../constants/constants';
+import { RECEIVE_POPULAR_MOVIES_ERROR, RECEIVE_POPULAR_MOVIES, RECEIVE_QUERY, RECEIVE_QUERY_ERROR } from '../constants/constants';
 
 const initialState = {
     fetched: false,
@@ -8,6 +8,14 @@ const initialState = {
 
 function movies (state = initialState, action){
     switch(action.type) {
+        case RECEIVE_POPULAR_MOVIES: {
+            return{
+                ...state,
+                movies: [...state.movies, ...action.payload.results],
+                fetched: true,
+            }
+            break;
+        }
         case RECEIVE_POPULAR_MOVIES_ERROR: {
             return {
                 ...state,
@@ -16,11 +24,19 @@ function movies (state = initialState, action){
             }
             break;
         }
-        case RECEIVE_POPULAR_MOVIES: {
+        case RECEIVE_QUERY: {
             return{
                 ...state,
-                movies: [...state.movies, ...action.payload.results],
                 fetched: true,
+                movies: action.payload.results
+            }
+            break;
+        }
+        case RECEIVE_QUERY_ERROR: {
+            return{
+                ...state,
+                fetched: false,
+                error: action.payload
             }
             break;
         }

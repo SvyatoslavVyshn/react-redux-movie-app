@@ -4,14 +4,13 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "dev": "webpack-dev-server --debug --hot --devtool eval-source-map --output-pathinfo --watch --colors --inline --content-base public"
+    "dev": "webpack-dev-server --debug --hot --devtool eval-source-map --output-pathinfo --watch --colors --inline --content-base public --host 0.0.0.0"
   },
   "author": "Svyatoslav Vyshnevetskiy",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.15.3",
     "less": "^2.7.2",
-    "masonry-layout": "^4.1.1",
     "react": "15.0.1",
     "react-dom": "15.0.1",
     "react-infinite-scroller": "^1.0.4",

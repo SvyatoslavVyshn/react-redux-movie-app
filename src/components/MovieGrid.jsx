@@ -9,9 +9,8 @@ class MovieGrid extends Component{
         const { addToFav } = this.props;
         return (
             <InfiniteScroll
-                pageStart={0}
+                pageStart={1}
                 loadMore={this.props.getPopularMovies}
-                element={'li'}
                 hasMore={true}
                 threshold={100}
                 loader={<h1 className="text-center">Loading ...</h1>}>

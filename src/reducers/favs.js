@@ -1,4 +1,4 @@
-import { ADD_TO_FAV } from '../constants/constants';
+import { ADD_TO_FAV, DELETE_FAV } from '../constants/constants';
 
 const initialState = [];
 
@@ -10,6 +10,12 @@ function favs (state = initialState, action){
                 action.item
             ]
             break;
+        }
+        case DELETE_FAV: {
+            return [
+                ...state.slice(0, action.i),
+                ...state.slice(action.i + 1)
+            ]
         }
     }
     return state

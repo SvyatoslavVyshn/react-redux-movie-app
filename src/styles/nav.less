@@ -1,6 +1,6 @@
 .active{
     font-weight: bold;
-    border-bottom: 2px solid @nav-text; 
+    border-bottom: 2px solid @text-color; 
 }
 
 
@@ -8,23 +8,23 @@
     width: 100%;
     min-height: 50px;
     font-size: 20px;
-    border-bottom: 1px solid @nav-border;
+    border-bottom: 1px solid @border;
     box-shadow: 2px 4px 8px;
-    background-color: #fff;
+    background-color: @bg-white;
 
     .hanle-expansion{
         width: 100%;
-        background: #d3d3d3;
+        background: @border;
         text-align: left;
         box-sizing: border-box;
         padding: 15px 10px;
         cursor: pointer;
-        color: @nav-text;
+        color: @text-color;
         display: none;
     }
 
     .nav-items-container{
-        background-color: @nav-bg;
+        background-color: @bg-white;
         overflow: hidden;
         list-style: none;
         text-align: center;
@@ -41,7 +41,7 @@
 }
 
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 480px){
     .nav-items-container{
         max-height: 0;
     }

@@ -6,7 +6,10 @@ import { RECEIVE_POPULAR_MOVIES,
          RECEIVE_RECOMMENDATIONS_ERROR,
          RECEIVE_GENRES,
          RECEIVE_GENRES_ERROR,
-         ADD_TO_FAV } from '../constants/constants';
+         ADD_TO_FAV,
+         RECEIVE_QUERY,
+         RECEIVE_QUERY_ERROR,
+         DELETE_FAV } from '../constants/constants';
 
 import axios from 'axios';
 
@@ -38,6 +41,7 @@ export function getMoviesDetail (movieID) {
     }
 }
 
+
 export function getRecommendations (movieID) {
     return function(dispatch) {
         axios.get(`${API_URL}${movieID}/recommendations?api_key=${API_KEY}&language=en-US`)
@@ -52,7 +56,7 @@ export function getRecommendations (movieID) {
 
 export function getGenres () {
     return function(dispatch) {
-        axios.get('https://api.themoviedb.org/3/genre/movie/list?api_key=5d9af60e2f284c1aa7133ac326b0cbd4&language=en-US')
+        axios.get(`https://api.themoviedb.org/3/genre/movie/list?api_key=${API_KEY}&language=en-US`)
             .then((res) => {
                 dispatch({type: RECEIVE_GENRES, payload: res.data})
             })
@@ -69,3 +73,25 @@ export function addToFav (item){
         item
     }
 }
+
+
+export function deleteFav (i){
+    return{
+        type: DELETE_FAV,
+        i
+    }
+}
+
+export function handleSearch (query) {
+    return function(dispatch) {
+        axios.get(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&language=en-US&query=${query}`)
+            .then((res) => {
+                dispatch({type: RECEIVE_QUERY, payload: res.data})
+            })
+            .catch((err) => {
+                dispatch({type: RECEIVE_QUERY_ERROR, payload: err})
+            })
+    }
+}
+
+

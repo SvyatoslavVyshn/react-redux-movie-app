@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 class SearchBar extends Component{
     constructor(props){
         super(props);
@@ -9,25 +10,26 @@ class SearchBar extends Component{
         }
 
         this.handleSearch = this.handleSearch.bind(this);
+        this.handleTextChange = this.handleTextChange.bind(this);
     }
     
-    handleSearch(e){
+    handleTextChange(e){
        const query = e.target.value;
+       this.setState({ text: query });
+    }
 
-       this.setState({
-           text: query
-       });
+    handleSearch(){
+        this.props.onSearch(this.state.text);
     }
 
     render(){
-        const style = {}
+        const { text } = this.state;
         return(
             <div className="search-bar">
-                    <input type="text" placeholder="Search Movie..." onChange={this.handleSearch}/>
-                    
-                    <div className="search-suggestion" style={this.state.text.length > 0 ? {display: 'block'}: {display: 'none'}}>
-                        <h4>{this.state.text}</h4>
-                    </div>
+                <div className="search-controls">
+                    <input type="text" placeholder="Search Movie..." onChange={this.handleTextChange}/>
+                    <button className="search-button" disabled={!text} onClick={this.handleSearch}>Search</button>
+                </div>
             </div>
         );
     }

@@ -1,15 +1,17 @@
     .movie-info{
         width: 90%;
         overflow: hidden;
-        margin: 0 auto;
+        padding: 0;
+        overflow: hidden;
+        max-height: 600px;
+        margin: auto;
         margin-bottom: 20px;
-        border: 1px solid #d3d3d3;
+        border: 1px solid @border;
         border-radius: 10px;
-        box-shadow: 2px 4px 8px #000;
-
+        box-shadow: 2px 4px 8px @text-color;
 
         &:hover{
-            box-shadow: 4px 6px 10px #000;
+            box-shadow: 4px 6px 10px @text-color;
         }
 
         .fav-btn{
@@ -17,26 +19,23 @@
         }
 
         .title{
-            padding: 10px;
-            max-height: 40px;
-            font-size: 25px;
+            font-size: 20px;
+            color: @text-color;
         }
         .poster{
             width: 100%;
             margin: 0 auto;
-            padding: 30px;
         }
 
         .genres{
-            margin: 0 auto;
+            margin: auto;
             p{
                 float: left;
-                margin-left:10px;
+                margin-left:5px;
                 padding: 5px;
-                background-color: #9F5BAD;
-                color: white;
+                background-color: @main-violet;
+                color: @bg-white;
                 border-radius: 10px; 
-                cursor: pointer;
             }
         }
     }
