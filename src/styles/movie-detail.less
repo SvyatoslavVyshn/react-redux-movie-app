@@ -1,0 +1,79 @@
+@import './recommendations.less';
+
+.movie-detail{
+    background-color: @bg1;
+    margin: 20px auto;
+    overflow: hidden;
+    height: 100%;    
+    .detail{
+        background-color: @bg-white;
+        width: 85%;
+        margin: 0 auto;
+        .headers{
+            margin: 20px 0;
+            border-bottom: 1px solid @border; 
+            h2{
+                color: @text-color;
+                padding: 10px;
+            }
+            h4{
+                color: @text-color;
+                padding: 10px;
+            }
+        } //headers-end
+    
+    
+        .detail-poster{
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .detail-contailner{
+            padding: 0 20px;
+            color: @text-color;
+            .release-date{
+                font-size: 20px;
+                color: @text-color;
+            } 
+            .overview{
+                font-size: 15px;
+                line-height: 25px;
+            }
+            .budget{
+                font-size: 20px;
+                color: @text-color;
+            }
+
+            .genres{
+                width: 100%;
+                overflow: hidden;
+                h4{color:@text-color; padding: 10px;}
+                h6{
+                    font-size: 15px;
+                    float: left;
+                    margin-left:10px;
+                    padding: 5px;
+                    background-color: @bg1;
+                    color: @bg-white;
+                    border-radius: 10px; 
+                }
+            }//genres end
+        }// detail-container end
+    
+
+            .production-countries, .spoken-languages, .production-companies{
+                margin: 20px auto;
+                width: 50%;
+                padding: 20px;
+                h4{color:@text-color; padding: 10px; text-align: center}
+                h6{
+                    font-size: 20px;
+                    padding: 5px;
+                    background-color: @green1;
+                    color: @bg-white;
+                    border-radius: 10px;
+                    text-align: center; 
+                }
+            } //production-countries, spoken-languages, production-companies end
+    }//detail end
+}//movie-detail end

@@ -1,0 +1,38 @@
+.favs{
+    margin-top: 5%; 
+    .fav-container{
+        width: 100%;
+        background-color: @aliceblue; 
+        .fav{
+            width: 100%;
+            height: 150px;
+            padding: 1%;
+            border-bottom: 1px solid @border;
+            position: relative;
+            display: flex; 
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            img{
+                width: 10%;
+                flex-basis: 50px;
+            }
+            p{
+               margin: auto;
+               font-size: 15px;
+               font-weight: bold;
+               width: 50%;
+               color: @text-color;
+            }
+            .delete{
+                color: @blue-gradient-end;
+                cursor: pointer;
+
+                &:hover{
+                    color: @text-color;
+                }
+
+            }
+        }
+    }
+}

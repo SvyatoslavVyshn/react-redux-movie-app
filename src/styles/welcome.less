@@ -1,0 +1,44 @@
+.welcome-page{
+    color: @bg-white;
+    .welcome-block{
+        background-color: @bg1;
+        background-image: linear-gradient(to bottom right,  @bg1, @main-violet, @end-gradient); 
+        height: 100vh;
+        text-align: center;
+        margin: auto;
+        padding-top: 10%;
+        .welcome-header{color: @bg-white; font-size: 65px; text-shadow: 2px 4px 16px @text-color;}
+        .welcome-message{
+            font-size: 20px; 
+            line-height: 65px;
+            margin-top: 20px;
+        }
+        .one{
+           font-size: 35px;
+        }
+    }
+    .features-block{
+        .welcome-block;
+        .features-header{.welcome-header}
+        background-image: linear-gradient(to bottom left,  @end-gradient, @blue-gradient, @blue-gradient-end); 
+        .features-container{
+            width: 75%;
+            margin: 5% auto;
+            display: flex; 
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .feature{
+                width: 25%;
+                text-align: center;
+                i{
+                    margin: 5% auto;
+                }
+                .feature-description{
+                    font-size:20px; 
+                }
+            }
+        }
+    }
+
+}
