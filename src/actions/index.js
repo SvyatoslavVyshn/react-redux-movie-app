@@ -1,20 +1,22 @@
-import { RECEIVE_POPULAR_MOVIES, 
-         RECEIVE_POPULAR_MOVIES_ERROR, 
-         RECEIVE_DETAIL, 
-         RECEIVE_DETAIL_ERROR,
-         RECEIVE_RECOMMENDATIONS,
-         RECEIVE_RECOMMENDATIONS_ERROR,
-         RECEIVE_GENRES,
-         RECEIVE_GENRES_ERROR,
-         ADD_TO_FAV,
-         RECEIVE_QUERY,
-         RECEIVE_QUERY_ERROR,
-         DELETE_FAV } from '../constants/constants';
+import { RECEIVE_POPULAR_MOVIES, RECEIVE_POPULAR_MOVIES_ERROR, 
+         
+         RECEIVE_DETAIL, RECEIVE_DETAIL_ERROR,
+         
+         RECEIVE_RECOMMENDATIONS, RECEIVE_RECOMMENDATIONS_ERROR,
+         
+         RECEIVE_GENRES, RECEIVE_GENRES_ERROR,
+         
+         ADD_TO_FAV, RECEIVE_QUERY,
+         
+         RECEIVE_QUERY_ERROR, DELETE_FAV } from '../constants/constants';
 
 import axios from 'axios';
 
 const API_URL = "https://api.themoviedb.org/3/movie/";
 const API_KEY = "5d9af60e2f284c1aa7133ac326b0cbd4"; 
+
+
+//Get Popular Movies Function
 
 export function getPopularMovies (page) {
     return function(dispatch) {
@@ -28,6 +30,7 @@ export function getPopularMovies (page) {
     }
 }
 
+//Get Movies Detail Function
 
 export function getMoviesDetail (movieID) {
     return function(dispatch) {
@@ -42,6 +45,8 @@ export function getMoviesDetail (movieID) {
 }
 
 
+// Get Recommendations Function
+
 export function getRecommendations (movieID) {
     return function(dispatch) {
         axios.get(`${API_URL}${movieID}/recommendations?api_key=${API_KEY}&language=en-US`)
@@ -53,6 +58,8 @@ export function getRecommendations (movieID) {
             })
     }
 }
+
+// Function for Getting Genres
 
 export function getGenres () {
     return function(dispatch) {
@@ -66,6 +73,7 @@ export function getGenres () {
     }
 }
 
+//Function For Adding Favorites
 
 export function addToFav (item){
     return{
@@ -75,12 +83,16 @@ export function addToFav (item){
 }
 
 
+// Deleting Favs Function
+
 export function deleteFav (i){
     return{
         type: DELETE_FAV,
         i
     }
 }
+
+//Searching Function
 
 export function handleSearch (query) {
     return function(dispatch) {
@@ -93,5 +105,3 @@ export function handleSearch (query) {
             })
     }
 }
-
-

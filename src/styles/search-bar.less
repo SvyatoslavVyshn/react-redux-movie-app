@@ -1,14 +1,9 @@
 .search-bar{
-    background-color: @bg1;
+    background-color: @bg-white;
     width: 100%;
     padding: 10px;
-    border-radius: 10px; 
+    border-bottom: 1px solid @border;
     margin: 50px auto;
-    box-shadow: 4px 4px 8px @text-color;
-
-    &:hover{
-        box-shadow: 6px 6px 8px @text-color;
-    }
 
     .search-controls{
         input{
@@ -20,17 +15,16 @@
             font-weight: bold;
             border: none;
             color: @text-color;
+            text-align: center;
         }
         .search-button{
             width: 10%;
             padding: 10px;
-            font-size: 20px;
+            font-size: 15px;
             font-weight: bold;
             background-color: @green1; 
             color: @bg-white;
             border: none;
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px; 
         }
     }
 

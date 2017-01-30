@@ -12,7 +12,7 @@ class MovieGrid extends Component{
                 pageStart={1}
                 loadMore={this.props.getPopularMovies}
                 hasMore={true}
-                threshold={100}
+                threshold={200}
                 loader={<h1 className="text-center">Loading ...</h1>}>
 
                 <div className="movie-grid">

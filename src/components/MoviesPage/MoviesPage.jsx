@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import MovieGrid from './MovieGrid.jsx';
 import SearchBar from './SearchBar.jsx';
-import Favs from './Favs.jsx';
+import Favs from '../Favs.jsx';
 
 class MoviesPage extends Component{
     render(){
@@ -13,7 +13,7 @@ class MoviesPage extends Component{
             return(   
                 <div className="movies-page container-fluid">
                     <Favs deleteFav={deleteFav} />
-                    <SearchBar onSearch={handleSearch}/>
+                    <SearchBar onSearch={handleSearch} movies={movies}/>
                     <MovieGrid {...this.props} movies={movies}/>
                 </div>
             );

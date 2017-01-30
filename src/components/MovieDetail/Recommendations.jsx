@@ -8,11 +8,7 @@ class Recommendations extends Component{
     render(){
         const { movie } = this.props;
         const { recommendations } = this.props;
-        const posterURL = 'https://image.tmdb.org/t/p/w500/';
-
-        if(!recommendations.results){
-                return <h1 className="text-center">LOADING... </h1>
-        }else{
+        const posterURL = 'https://image.tmdb.org/t/p/w500/';   
             return(
                 <div className="recommendations">
                     <h3 className="text-center recommendations-header">Recommendations</h3>
@@ -24,11 +20,10 @@ class Recommendations extends Component{
                                     <h5>{result.title}</h5>
                                 </div>
                             </div>
-                        ) : null 
+                        ) : <h6 className="text-center">Loading...</h6>
                     }
                 </div>
             )
-        }
     }
 }
 

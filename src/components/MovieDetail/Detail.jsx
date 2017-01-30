@@ -9,9 +9,6 @@ class Detail extends Component{
         const { movie } = this.props;
         const { detail } = this.props;
         const posterURL = `https://image.tmdb.org/t/p/w500/${detail.poster_path}`;
-        if(!detail){
-                return <h1 className="text-center">LOADING... </h1>
-        }else{
             return(
             <div className="detail">
                 <button className="btn btn-primary btn-block fav-btn" onClick={this.props.addToFav.bind(null,  this.props.movie)}>
@@ -38,7 +35,7 @@ class Detail extends Component{
                         <div className="genres">
                             <h4>Genres:</h4> 
                             { 
-                                detail.genres ? detail.genres.map( (genre, i) => <h6 key={i}>{genre.name}</h6>) : null 
+                                detail.genres ? detail.genres.map( (genre, i) => <h6 key={i}>{genre.name}</h6>) : <h6 className="text-center">Loading...</h6>
                             }
                         </div>
                     </div>
@@ -49,7 +46,7 @@ class Detail extends Component{
                         <div className="production-companies">
                             <h4>Production companies:</h4> 
                             { 
-                                detail.production_companies ? detail.production_companies.map( (company, i) => <h6 key={i}>{company.name}</h6>) : null 
+                                detail.production_companies ? detail.production_companies.map( (company, i) => <h6 key={i}>{company.name}</h6>) : <h6 className="text-center">Loading...</h6> 
                             }
                         </div>
 
@@ -58,7 +55,7 @@ class Detail extends Component{
                         <div className="production-countries">
                             <h4>Production countries:</h4> 
                             { 
-                                detail.production_countries ? detail.production_countries.map( (country, i) => <h6 key={i}>{country.name}</h6>) : null 
+                                detail.production_countries ? detail.production_countries.map( (country, i) => <h6 key={i}>{country.name}</h6>) : <h6 className="text-center">Loading...</h6>
                             }
                         </div>
                         
@@ -67,13 +64,12 @@ class Detail extends Component{
                         <div className="spoken-languages">
                             <h4>Spoken Languages:</h4> 
                             { 
-                                detail.spoken_languages ? detail.spoken_languages.map( (language, i) => <h6 key={i}>{language.name}</h6>) : null 
+                                detail.spoken_languages ? detail.spoken_languages.map( (language, i) => <h6 key={i}>{language.name}</h6>) : <h6 className="text-center">Loading...</h6>
                             }
                         </div>
             </div>
             )
-        }    
-    }
+    }    
 }
 
 export default Detail;
