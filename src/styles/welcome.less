@@ -3,7 +3,8 @@
     .welcome-block{
         background-color: @bg1;
         background-image: linear-gradient(to bottom right,  @bg1, @main-violet, @end-gradient); 
-        height: 100vh;
+        min-height: 100vh;
+        overflow: hidden;
         text-align: center;
         margin: auto;
         padding-top: 10%;
@@ -41,4 +42,37 @@
         }
     }
 
+}
+
+
+@media screen and (max-width: 750px){
+    .welcome-page .welcome-block{
+        max-height: 100vh;
+    }
+    .welcome-page .welcome-block .welcome-header{
+        font-size: 35px;
+    }
+    .welcome-page .welcome-block .welcome-message{
+        font-size: 20px;
+        line-height: 35px;
+    }
+    
+    
+    .welcome-page .features-block .features-header{
+        font-size: 35px;
+    }
+
+    .welcome-page .features-block .features-container .feature{
+        width: 80%;
+        margin: auto;
+    }
+
+    .welcome-page .features-block .features-container .feature i{
+        font-size: 25px;
+        margin: 10px auto;
+    }
+    .welcome-page .features-block .features-container .feature .feature-description{
+        font-size: 20px;
+        line-height: 25px;
+    }
 }

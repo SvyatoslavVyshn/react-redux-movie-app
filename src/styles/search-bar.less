@@ -5,9 +5,18 @@
     border-bottom: 1px solid @border;
     margin: 50px auto;
 
+    .error{
+        text-align: center;
+        color: @error;
+        font-size: 20px;
+    }
+
     .search-controls{
+        position: relative;
+        overflow: hidden;
         input{
-            width: 90%;
+            float: left;
+            width: 85%;
             background-color:@bg-white;
             outline: 0;
             padding: 10px;
@@ -17,7 +26,17 @@
             color: @text-color;
             text-align: center;
         }
+
+        .clear{
+            text-align: center;
+            float: left;
+            width: 5%;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
         .search-button{
+            float: left;
             width: 10%;
             padding: 10px;
             font-size: 15px;
@@ -28,4 +47,42 @@
         }
     }
 
+}
+
+@media screen and (max-width: 1275px){
+    .search-bar .search-controls .search-button{
+        font-size: 12px;
+        width: 15%;
+    }     
+    .search-bar .search-controls input{
+        width: 80%;
+    }   
+}
+
+@media screen and (max-width: 510px){
+    .search-bar .search-controls .search-button{
+        font-size: 12px;
+        width: 10%;
+    }  
+    .search-bar .search-controls input{
+        width: 85%;
+        font-size: 15px;
+    } 
+    .search-bar .search-controls .clear{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 385px){
+    .search-bar .search-controls .search-button{
+        font-size: 10px;
+        width: 20%;
+        padding: 0;
+    }  
+    .search-bar .search-controls input{
+        width: 75%;
+    } 
+   .search-bar .search-controls .clear{
+        font-size: 10px;
+   }
 }

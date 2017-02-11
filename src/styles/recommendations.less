@@ -5,12 +5,12 @@
     overflow: hidden;
     width: 85%;
     margin: 40px auto;
-    h3{color: @text-color;}
+    h3{color: @text-color; margin: 20px;}
     
     .single{
         width: 90%;
         padding: 10px;
-        margin: 20px auto;
+        margin: 0 55px;
         height: 150px;
         display: flex; 
         flex-direction: row;
@@ -34,5 +34,22 @@
             width: 10%;
             flex-basis: 50px;
         }
+    }
+}
+
+
+@media screen and (max-width: 900px){
+   .recommendations h3{
+       font-size: 20px;
+   }
+    .recommendations .single{
+        margin: auto;
+    }
+    .recommendations .single h5 {
+        font-size: 15px;
+        width: 40%;
+    }
+    .recommendations .single img {
+        width: 20%;
     }
 }

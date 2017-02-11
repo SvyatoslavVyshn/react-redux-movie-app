@@ -31,4 +31,9 @@ class MovieDetail extends Component{
         }
 }
 
+MovieDetail.propTypes = {
+    movies: React.PropTypes.array
+}
+
+
 export default MovieDetail;

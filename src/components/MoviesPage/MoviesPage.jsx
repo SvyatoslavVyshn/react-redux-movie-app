@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import MovieGrid from './MovieGrid.jsx';
 import SearchBar from './SearchBar.jsx';
-import Favs from '../Favs.jsx';
+import Favs from './Favs.jsx';
 
 class MoviesPage extends Component{
+
     render(){
         const { movies, handleSearch, deleteFav } = this.props;
         const { genres } = this.props.genres;
@@ -13,11 +14,14 @@ class MoviesPage extends Component{
             return(   
                 <div className="movies-page container-fluid">
                     <Favs deleteFav={deleteFav} />
-                    <SearchBar onSearch={handleSearch} movies={movies}/>
-                    <MovieGrid {...this.props} movies={movies}/>
+                    <SearchBar handleSearch={handleSearch} />
+
+                    <MovieGrid {...this.props} movies={movies} />
                 </div>
             );
         }
     }
 }
+
+
 export default MoviesPage;

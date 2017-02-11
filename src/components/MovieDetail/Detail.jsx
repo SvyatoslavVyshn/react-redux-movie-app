@@ -8,11 +8,11 @@ class Detail extends Component{
     render(){
         const { movie } = this.props;
         const { detail } = this.props;
-        const posterURL = `https://image.tmdb.org/t/p/w500/${detail.poster_path}`;
+        const posterURL = detail.poster_path ? `https://image.tmdb.org/t/p/w500/${detail.poster_path}` : 'images/image-not.jpg';
             return(
             <div className="detail">
                 <button className="btn btn-primary btn-block fav-btn" onClick={this.props.addToFav.bind(null,  this.props.movie)}>
-                    <h6 style={{color: '#fff'}}><span className="glyphicon glyphicon-heart"></span>  Add to favoutite</h6>
+                    <h6 style={{color: '#fff'}}><span className="glyphicon glyphicon-heart"></span>  Add to favorite</h6>
                 </button>
                 <div className="headers">
                     <h2 className="text-center">{detail.title}</h2>

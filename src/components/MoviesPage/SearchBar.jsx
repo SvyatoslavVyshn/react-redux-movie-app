@@ -5,28 +5,40 @@ class SearchBar extends Component{
         super(props);
 
         this.state = {
-            isText: false
+            isText: false,
+            text: ''
         }
 
-        this.handleSearch = this.handleSearch.bind(this);
-        this.handleBtnTextChange = this.handleBtnTextChange.bind(this);
+        this.handleMovieSearch = this.handleMovieSearch.bind(this);
+        this.handleTextChange = this.handleTextChange.bind(this);
+        this.handleSearchActive = this.handleSearchActive.bind(this);
+        this.handleEmptySearch = this.handleEmptySearch.bind(this);
     }
 
-    handleBtnTextChange(e){
-        const val = e.target.value;
-        val.length > 0 ? this.setState({isText: true}) : this.setState({isText: false});
+    handleTextChange(e){
+        const { movies } = this.props;
+        this.setState({text: e.target.value});
+        this.state.text.length > 0 ? this.setState({isText: true}) : this.setState({isText: false});
     }
 
-    handleSearch(e){
+    handleMovieSearch(e){
         e.preventDefault();
-        const query = this.refs.query.value;
-        this.props.onSearch(query);
+        this.setState({error: null});
+        this.props.handleSearch(this.state.text);
     }
 
-    render(){
-        const { isText } = this.state;
-        const buttonText = isText ? 'Search' : 'Enter Movie';
-        const status = !isText;
+    handleSearchActive(){
+        this.setState({text: '', error:''});
+    }
+
+    handleEmptySearch(e){
+        e.preventDefault();
+        this.setState({error: 'Please, enter movie name!'})
+    }
+
+    render(){ 
+        const { isText, text } = this.state;
+        const handler = text ? this.handleMovieSearch : this.handleEmptySearch;
         const styleActive = {
             cursor: 'pointer',
             backgroundColor: '#5CD172'
@@ -36,17 +48,31 @@ class SearchBar extends Component{
             backgroundColor: '#d3d3d3'
         };
         const style = isText ? styleActive : styleDisabled;
+        const styleX = text.length > 0 ? { display: 'block' } : {display: 'none'}
         return(
             <div className="search-bar">
                 <div className="search-controls">
-                    <form onSubmit={this.handleSearch}>
-                        <input type="text" placeholder="Search Movie..." ref="query" onChange={this.handleBtnTextChange}/>
-                        <button type="submit" disabled={status} className="search-button" style={style}>{buttonText}</button>
+                    <form onSubmit={handler}>
+                        <input type="text" 
+                        placeholder="Search Movie..." 
+                        value={text}
+                        onChange={this.handleTextChange}/>
+                        
+                        <span className="clear" style={styleX} onClick={this.handleSearchActive}>X</span>
+
+                        <button type="submit" 
+                        className="search-button" 
+                        style={styleActive}> Search </button>
                     </form>
                 </div>
+                {this.state.error && <h6 className="error">{this.state.error}</h6>}
             </div>
         );
     }
+}
+
+SearchBar.propTypes = {
+    handleSearch: React.PropTypes.func.isRequired,
 }
 
 

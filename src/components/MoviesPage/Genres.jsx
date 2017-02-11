@@ -5,11 +5,17 @@ class Genres extends Component{
         const { genres } = this.props;
         const { genreID } = this.props;
         const genre = genres.filter( (genre) => genre.id === genreID );
-            return(
+            if(genres){
+                return(
             <div className="genres">
-            <p>{genre[0].name}</p>
+                <p>{genre[0].name}</p>
             </div>
-        );
+            );
+            }else{
+                <div className="genres">
+                    <p>None</p>
+                </div>
+            }
     }
 }
 

@@ -12,7 +12,7 @@ class Welcome extends Component{
                         This is Movie App <i className="fa fa-film fa-lg"></i>
                     </p>
                     <p className="welcome-message two">
-                        If you are searching for new movies to watch, then you will find it usefull!
+                        If you are searching for new movies to watch, then you will find it useful!
                     </p>
                     <Link to="/movies" style={style}><button className="btn btn-info">Get Started</button></Link>
                 </div>
