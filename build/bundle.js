@@ -30455,30 +30455,13 @@
 	var MoviesPage = (function (_Component) {
 	    _inherits(MoviesPage, _Component);
 
-	    function MoviesPage(props) {
+	    function MoviesPage() {
 	        _classCallCheck(this, MoviesPage);
 
-	        _get(Object.getPrototypeOf(MoviesPage.prototype), 'constructor', this).call(this, props);
-
-	        this.state = {
-	            hasMore: true
-	        };
-
-	        this.handleLoadingStop = this.handleLoadingStop.bind(this);
-	        this.handleLoadingStart = this.handleLoadingStart.bind(this);
+	        _get(Object.getPrototypeOf(MoviesPage.prototype), 'constructor', this).apply(this, arguments);
 	    }
 
 	    _createClass(MoviesPage, [{
-	        key: 'handleLoadingStop',
-	        value: function handleLoadingStop() {
-	            this.setState({ hasMore: false });
-	        }
-	    }, {
-	        key: 'handleLoadingStart',
-	        value: function handleLoadingStart() {
-	            this.setState({ hasMore: true });
-	        }
-	    }, {
 	        key: 'render',
 	        value: function render() {
 	            var _props = this.props;
@@ -30486,7 +30469,6 @@
 	            var handleSearch = _props.handleSearch;
 	            var deleteFav = _props.deleteFav;
 	            var genres = this.props.genres.genres;
-	            var hasMore = this.state.hasMore;
 
 	            if (!movies || !genres) {
 	                return _react2['default'].createElement(
@@ -30499,10 +30481,8 @@
 	                    'div',
 	                    { className: 'movies-page container-fluid' },
 	                    _react2['default'].createElement(_FavsJsx2['default'], { deleteFav: deleteFav }),
-	                    _react2['default'].createElement(_SearchBarJsx2['default'], { onSearch: handleSearch, movies: movies,
-	                        onLoadingStop: this.handleLoadingStop,
-	                        onLoadingStart: this.handleLoadingStart }),
-	                    _react2['default'].createElement(_MovieGridJsx2['default'], _extends({}, this.props, { movies: movies, hasMore: hasMore }))
+	                    _react2['default'].createElement(_SearchBarJsx2['default'], { handleSearch: handleSearch }),
+	                    _react2['default'].createElement(_MovieGridJsx2['default'], _extends({}, this.props, { movies: movies }))
 	                );
 	            }
 	        }
@@ -30564,7 +30544,6 @@
 	        value: function render() {
 	            var _props = this.props;
 	            var movies = _props.movies;
-	            var hasMore = _props.hasMore;
 	            var addToFav = _props.addToFav;
 	            var genres = this.props.genres.genres;
 
@@ -30573,7 +30552,7 @@
 	                {
 	                    pageStart: 1,
 	                    loadMore: this.props.getPopularMovies,
-	                    hasMore: hasMore,
+	                    hasMore: true,
 	                    loader: _react2['default'].createElement(
 	                        'h1',
 	                        { className: 'text-center' },
@@ -30993,7 +30972,7 @@
 	            text: ''
 	        };
 
-	        this.handleSearch = this.handleSearch.bind(this);
+	        this.handleMovieSearch = this.handleMovieSearch.bind(this);
 	        this.handleTextChange = this.handleTextChange.bind(this);
 	        this.handleSearchActive = this.handleSearchActive.bind(this);
 	        this.handleEmptySearch = this.handleEmptySearch.bind(this);
@@ -31008,18 +30987,16 @@
 	            this.state.text.length > 0 ? this.setState({ isText: true }) : this.setState({ isText: false });
 	        }
 	    }, {
-	        key: 'handleSearch',
-	        value: function handleSearch(e) {
+	        key: 'handleMovieSearch',
+	        value: function handleMovieSearch(e) {
 	            e.preventDefault();
 	            this.setState({ error: null });
-	            this.props.onLoadingStop();
-	            this.props.onSearch(this.state.text);
+	            this.props.handleSearch(this.state.text);
 	        }
 	    }, {
 	        key: 'handleSearchActive',
 	        value: function handleSearchActive() {
 	            this.setState({ text: '', error: '' });
-	            this.props.onLoadingStart();
 	        }
 	    }, {
 	        key: 'handleEmptySearch',
@@ -31034,7 +31011,7 @@
 	            var isText = _state.isText;
 	            var text = _state.text;
 
-	            var handler = text ? this.handleSearch : this.handleEmptySearch;
+	            var handler = text ? this.handleMovieSearch : this.handleEmptySearch;
 	            var styleActive = {
 	                cursor: 'pointer',
 	                backgroundColor: '#5CD172'
@@ -31085,10 +31062,7 @@
 	})(_react.Component);
 
 	SearchBar.propTypes = {
-	    handleSearch: _react2['default'].PropTypes.func,
-	    handleTextChange: _react2['default'].PropTypes.func,
-	    handleSearchActive: _react2['default'].PropTypes.func,
-	    handleEmptySearch: _react2['default'].PropTypes.func
+	    handleSearch: _react2['default'].PropTypes.func.isRequired
 	};
 
 	exports['default'] = SearchBar;
