@@ -86,7 +86,7 @@
 
 	var _reducersIndex2 = _interopRequireDefault(_reducersIndex);
 
-	var _store = __webpack_require__(331);
+	var _store = __webpack_require__(330);
 
 	var _store2 = _interopRequireDefault(_store);
 
@@ -26586,7 +26586,7 @@
 /* 242 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
@@ -26629,7 +26629,7 @@
 	exports['default'] = App;
 	module.exports = exports['default'];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "App.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "App.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 243 */
@@ -28380,26 +28380,37 @@
 	  value: true
 	});
 	var RECEIVE_POPULAR_MOVIES = "RECEIVE_POPULAR_MOVIES";
+
 	exports.RECEIVE_POPULAR_MOVIES = RECEIVE_POPULAR_MOVIES;
 	var RECEIVE_POPULAR_MOVIES_ERROR = "RECEIVE_POPULAR_MOVIES_ERROR";
+
 	exports.RECEIVE_POPULAR_MOVIES_ERROR = RECEIVE_POPULAR_MOVIES_ERROR;
 	var RECEIVE_DETAIL = "RECEIVE_DETAIL";
+
 	exports.RECEIVE_DETAIL = RECEIVE_DETAIL;
 	var RECEIVE_DETAIL_ERROR = "RECEIVE_DETAIL_ERROR";
+
 	exports.RECEIVE_DETAIL_ERROR = RECEIVE_DETAIL_ERROR;
 	var RECEIVE_RECOMMENDATIONS = "RECEIVE_RECOMMENDATIONS";
+
 	exports.RECEIVE_RECOMMENDATIONS = RECEIVE_RECOMMENDATIONS;
 	var RECEIVE_RECOMMENDATIONS_ERROR = "RECEIVE_RECOMMENDATIONS_ERROR";
+
 	exports.RECEIVE_RECOMMENDATIONS_ERROR = RECEIVE_RECOMMENDATIONS_ERROR;
 	var RECEIVE_GENRES = "RECEIVE_GENRES";
+
 	exports.RECEIVE_GENRES = RECEIVE_GENRES;
 	var RECEIVE_GENRES_ERROR = "RECEIVE_GENRES_ERROR";
+
 	exports.RECEIVE_GENRES_ERROR = RECEIVE_GENRES_ERROR;
 	var ADD_TO_FAV = "ADD_TO_FAV";
+
 	exports.ADD_TO_FAV = ADD_TO_FAV;
 	var RECEIVE_QUERY = "RECEIVE_QUERY";
+
 	exports.RECEIVE_QUERY = RECEIVE_QUERY;
 	var RECEIVE_QUERY_ERROR = "RECEIVE_QUERY_ERROR";
+
 	exports.RECEIVE_QUERY_ERROR = RECEIVE_QUERY_ERROR;
 	var DELETE_FAV = "DELETE_FAV";
 	exports.DELETE_FAV = DELETE_FAV;
@@ -29897,7 +29908,7 @@
 /* 298 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
@@ -29956,13 +29967,13 @@
 	exports['default'] = Main;
 	module.exports = exports['default'];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Main.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Main.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 299 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
@@ -30060,13 +30071,13 @@
 	exports['default'] = Nav;
 	module.exports = exports['default'];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Nav.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Nav.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 300 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	"use strict";
 
@@ -30252,13 +30263,13 @@
 	exports["default"] = AboutPage;
 	module.exports = exports["default"];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "AboutPage.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "AboutPage.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 301 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
@@ -30315,7 +30326,7 @@
 	                    _react2['default'].createElement(
 	                        'p',
 	                        { className: 'welcome-message two' },
-	                        'If you are searching for new movies to watch, then you will find it usefull!'
+	                        'If you are searching for new movies to watch, then you will find it useful!'
 	                    ),
 	                    _react2['default'].createElement(
 	                        _reactRouter.Link,
@@ -30380,7 +30391,7 @@
 	exports['default'] = Welcome;
 	module.exports = exports['default'];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Welcome.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Welcome.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 302 */
@@ -30405,7 +30416,7 @@
 /* 303 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
@@ -30444,13 +30455,30 @@
 	var MoviesPage = (function (_Component) {
 	    _inherits(MoviesPage, _Component);
 
-	    function MoviesPage() {
+	    function MoviesPage(props) {
 	        _classCallCheck(this, MoviesPage);
 
-	        _get(Object.getPrototypeOf(MoviesPage.prototype), 'constructor', this).apply(this, arguments);
+	        _get(Object.getPrototypeOf(MoviesPage.prototype), 'constructor', this).call(this, props);
+
+	        this.state = {
+	            hasMore: true
+	        };
+
+	        this.handleLoadingStop = this.handleLoadingStop.bind(this);
+	        this.handleLoadingStart = this.handleLoadingStart.bind(this);
 	    }
 
 	    _createClass(MoviesPage, [{
+	        key: 'handleLoadingStop',
+	        value: function handleLoadingStop() {
+	            this.setState({ hasMore: false });
+	        }
+	    }, {
+	        key: 'handleLoadingStart',
+	        value: function handleLoadingStart() {
+	            this.setState({ hasMore: true });
+	        }
+	    }, {
 	        key: 'render',
 	        value: function render() {
 	            var _props = this.props;
@@ -30458,6 +30486,7 @@
 	            var handleSearch = _props.handleSearch;
 	            var deleteFav = _props.deleteFav;
 	            var genres = this.props.genres.genres;
+	            var hasMore = this.state.hasMore;
 
 	            if (!movies || !genres) {
 	                return _react2['default'].createElement(
@@ -30470,8 +30499,10 @@
 	                    'div',
 	                    { className: 'movies-page container-fluid' },
 	                    _react2['default'].createElement(_FavsJsx2['default'], { deleteFav: deleteFav }),
-	                    _react2['default'].createElement(_SearchBarJsx2['default'], { onSearch: handleSearch, movies: movies }),
-	                    _react2['default'].createElement(_MovieGridJsx2['default'], _extends({}, this.props, { movies: movies }))
+	                    _react2['default'].createElement(_SearchBarJsx2['default'], { onSearch: handleSearch, movies: movies,
+	                        onLoadingStop: this.handleLoadingStop,
+	                        onLoadingStart: this.handleLoadingStart }),
+	                    _react2['default'].createElement(_MovieGridJsx2['default'], _extends({}, this.props, { movies: movies, hasMore: hasMore }))
 	                );
 	            }
 	        }
@@ -30483,13 +30514,13 @@
 	exports['default'] = MoviesPage;
 	module.exports = exports['default'];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "MoviesPage.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "MoviesPage.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 304 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
@@ -30531,28 +30562,35 @@
 	    _createClass(MovieGrid, [{
 	        key: 'render',
 	        value: function render() {
-	            var movies = this.props.movies;
+	            var _props = this.props;
+	            var movies = _props.movies;
+	            var hasMore = _props.hasMore;
+	            var addToFav = _props.addToFav;
 	            var genres = this.props.genres.genres;
-	            var addToFav = this.props.addToFav;
 
 	            return _react2['default'].createElement(
 	                _reactInfiniteScroller2['default'],
 	                {
 	                    pageStart: 1,
 	                    loadMore: this.props.getPopularMovies,
-	                    hasMore: true,
-	                    threshold: 200,
+	                    hasMore: hasMore,
 	                    loader: _react2['default'].createElement(
 	                        'h1',
 	                        { className: 'text-center' },
 	                        'Loading ...'
-	                    ) },
+	                    ),
+	                    isReverse: false },
 	                _react2['default'].createElement(
 	                    'div',
 	                    { className: 'movie-grid' },
 	                    movies.map(function (movie, i) {
 	                        return _react2['default'].createElement(_MovieJsx2['default'], { movie: movie, addToFav: addToFav, genres: genres, i: i, key: i });
-	                    })
+	                    }),
+	                    movies.length === 0 && _react2['default'].createElement(
+	                        'h2',
+	                        { className: 'text-center' },
+	                        'Not Found...'
+	                    )
 	                )
 	            );
 	        }
@@ -30561,16 +30599,22 @@
 	    return MovieGrid;
 	})(_react.Component);
 
+	MovieGrid.propTypes = {
+	    movies: _react2['default'].PropTypes.array.isRequired,
+	    hasMore: _react2['default'].PropTypes.bool,
+	    addToFav: _react2['default'].PropTypes.func
+	};
+
 	exports['default'] = MovieGrid;
 	module.exports = exports['default'];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "MovieGrid.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "MovieGrid.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 305 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
@@ -30614,11 +30658,11 @@
 	            var genres = this.props.genres;
 	            var i = this.props.i;
 
-	            var posterURL = 'https://image.tmdb.org/t/p/w500/' + movie.poster_path;
+	            var posterURL = movie.poster_path ? 'https://image.tmdb.org/t/p/w500/' + movie.poster_path : 'images/image-not.jpg';
 	            var style = { textDecoration: "none" };
 	            return _react2['default'].createElement(
 	                'div',
-	                { className: 'col-lg-4 col-md-6 col-sm-12' },
+	                { className: 'col-lg-4 col-md-6 col-sm-6 col-xs-12' },
 	                _react2['default'].createElement(
 	                    'div',
 	                    { className: 'movie-info' },
@@ -30626,7 +30670,7 @@
 	                        'button',
 	                        { className: 'btn btn-info btn-block fav-btn', onClick: this.props.addToFav.bind(null, movie) },
 	                        _react2['default'].createElement('span', { className: 'glyphicon glyphicon-heart' }),
-	                        ' Add to favoutite'
+	                        ' Add to favorites'
 	                    ),
 	                    _react2['default'].createElement(
 	                        _reactRouter.Link,
@@ -30649,16 +30693,21 @@
 	    return Movie;
 	})(_react.Component);
 
+	Movie.propTypes = {
+	    movie: _react2['default'].PropTypes.object.isRequired,
+	    genres: _react2['default'].PropTypes.array.isRequired
+	};
+
 	exports['default'] = Movie;
 	module.exports = exports['default'];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Movie.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Movie.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 306 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	"use strict";
 
@@ -30698,15 +30747,27 @@
 	            var genre = genres.filter(function (genre) {
 	                return genre.id === genreID;
 	            });
-	            return _react2["default"].createElement(
-	                "div",
-	                { className: "genres" },
+	            if (genres) {
+	                return _react2["default"].createElement(
+	                    "div",
+	                    { className: "genres" },
+	                    _react2["default"].createElement(
+	                        "p",
+	                        null,
+	                        genre[0].name
+	                    )
+	                );
+	            } else {
 	                _react2["default"].createElement(
-	                    "p",
-	                    null,
-	                    genre[0].name
-	                )
-	            );
+	                    "div",
+	                    { className: "genres" },
+	                    _react2["default"].createElement(
+	                        "p",
+	                        null,
+	                        "None"
+	                    )
+	                );
+	            }
 	        }
 	    }]);
 
@@ -30716,7 +30777,7 @@
 	exports["default"] = Genres;
 	module.exports = exports["default"];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Genres.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Genres.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 307 */
@@ -30897,7 +30958,7 @@
 /* 308 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
@@ -30928,33 +30989,52 @@
 	        _get(Object.getPrototypeOf(SearchBar.prototype), 'constructor', this).call(this, props);
 
 	        this.state = {
-	            isText: false
+	            isText: false,
+	            text: ''
 	        };
 
 	        this.handleSearch = this.handleSearch.bind(this);
-	        this.handleBtnTextChange = this.handleBtnTextChange.bind(this);
+	        this.handleTextChange = this.handleTextChange.bind(this);
+	        this.handleSearchActive = this.handleSearchActive.bind(this);
+	        this.handleEmptySearch = this.handleEmptySearch.bind(this);
 	    }
 
 	    _createClass(SearchBar, [{
-	        key: 'handleBtnTextChange',
-	        value: function handleBtnTextChange(e) {
-	            var val = e.target.value;
-	            val.length > 0 ? this.setState({ isText: true }) : this.setState({ isText: false });
+	        key: 'handleTextChange',
+	        value: function handleTextChange(e) {
+	            var movies = this.props.movies;
+
+	            this.setState({ text: e.target.value });
+	            this.state.text.length > 0 ? this.setState({ isText: true }) : this.setState({ isText: false });
 	        }
 	    }, {
 	        key: 'handleSearch',
 	        value: function handleSearch(e) {
 	            e.preventDefault();
-	            var query = this.refs.query.value;
-	            this.props.onSearch(query);
+	            this.setState({ error: null });
+	            this.props.onLoadingStop();
+	            this.props.onSearch(this.state.text);
+	        }
+	    }, {
+	        key: 'handleSearchActive',
+	        value: function handleSearchActive() {
+	            this.setState({ text: '', error: '' });
+	            this.props.onLoadingStart();
+	        }
+	    }, {
+	        key: 'handleEmptySearch',
+	        value: function handleEmptySearch(e) {
+	            e.preventDefault();
+	            this.setState({ error: 'Please, enter movie name!' });
 	        }
 	    }, {
 	        key: 'render',
 	        value: function render() {
-	            var isText = this.state.isText;
+	            var _state = this.state;
+	            var isText = _state.isText;
+	            var text = _state.text;
 
-	            var buttonText = isText ? 'Search' : 'Enter Movie';
-	            var status = !isText;
+	            var handler = text ? this.handleSearch : this.handleEmptySearch;
 	            var styleActive = {
 	                cursor: 'pointer',
 	                backgroundColor: '#5CD172'
@@ -30964,6 +31044,7 @@
 	                backgroundColor: '#d3d3d3'
 	            };
 	            var style = isText ? styleActive : styleDisabled;
+	            var styleX = text.length > 0 ? { display: 'block' } : { display: 'none' };
 	            return _react2['default'].createElement(
 	                'div',
 	                { className: 'search-bar' },
@@ -30972,14 +31053,29 @@
 	                    { className: 'search-controls' },
 	                    _react2['default'].createElement(
 	                        'form',
-	                        { onSubmit: this.handleSearch },
-	                        _react2['default'].createElement('input', { type: 'text', placeholder: 'Search Movie...', ref: 'query', onChange: this.handleBtnTextChange }),
+	                        { onSubmit: handler },
+	                        _react2['default'].createElement('input', { type: 'text',
+	                            placeholder: 'Search Movie...',
+	                            value: text,
+	                            onChange: this.handleTextChange }),
+	                        _react2['default'].createElement(
+	                            'span',
+	                            { className: 'clear', style: styleX, onClick: this.handleSearchActive },
+	                            'X'
+	                        ),
 	                        _react2['default'].createElement(
 	                            'button',
-	                            { type: 'submit', disabled: status, className: 'search-button', style: style },
-	                            buttonText
+	                            { type: 'submit',
+	                                className: 'search-button',
+	                                style: styleActive },
+	                            ' Search '
 	                        )
 	                    )
+	                ),
+	                this.state.error && _react2['default'].createElement(
+	                    'h6',
+	                    { className: 'error' },
+	                    this.state.error
 	                )
 	            );
 	        }
@@ -30988,16 +31084,23 @@
 	    return SearchBar;
 	})(_react.Component);
 
+	SearchBar.propTypes = {
+	    handleSearch: _react2['default'].PropTypes.func,
+	    handleTextChange: _react2['default'].PropTypes.func,
+	    handleSearchActive: _react2['default'].PropTypes.func,
+	    handleEmptySearch: _react2['default'].PropTypes.func
+	};
+
 	exports['default'] = SearchBar;
 	module.exports = exports['default'];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "SearchBar.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "SearchBar.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 309 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
@@ -31061,6 +31164,11 @@
 	                _react2['default'].createElement(
 	                    'div',
 	                    { className: 'fav-container container', style: this.state.expanded ? { display: 'block' } : { display: 'none' } },
+	                    favorites.favs.length == 0 && _react2['default'].createElement(
+	                        'h5',
+	                        { className: 'text-center placeholder' },
+	                        'Nothing here yet...'
+	                    ),
 	                    favorites.favs.map(function (fav, i) {
 	                        return _react2['default'].createElement(
 	                            'div',
@@ -31089,7 +31197,7 @@
 	exports['default'] = Favs;
 	module.exports = exports['default'];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Favs.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Favs.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 310 */
@@ -31146,7 +31254,7 @@
 /* 312 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
@@ -31226,32 +31334,36 @@
 	    return MovieDetail;
 	})(_react.Component);
 
+	MovieDetail.propTypes = {
+	    movies: _react2['default'].PropTypes.array
+	};
+
 	exports['default'] = MovieDetail;
 	module.exports = exports['default'];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "MovieDetail.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "MovieDetail.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 313 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
-	"use strict";
+	'use strict';
 
-	Object.defineProperty(exports, "__esModule", {
+	Object.defineProperty(exports, '__esModule', {
 	    value: true
 	});
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var _react = __webpack_require__(10);
 
@@ -31263,162 +31375,162 @@
 	    function Detail() {
 	        _classCallCheck(this, Detail);
 
-	        _get(Object.getPrototypeOf(Detail.prototype), "constructor", this).apply(this, arguments);
+	        _get(Object.getPrototypeOf(Detail.prototype), 'constructor', this).apply(this, arguments);
 	    }
 
 	    _createClass(Detail, [{
-	        key: "componentWillMount",
+	        key: 'componentWillMount',
 	        value: function componentWillMount() {
 	            var movie = this.props.movie;
 
 	            this.props.getMoviesDetail(movie.id);
 	        }
 	    }, {
-	        key: "render",
+	        key: 'render',
 	        value: function render() {
 	            var movie = this.props.movie;
 	            var detail = this.props.detail;
 
-	            var posterURL = "https://image.tmdb.org/t/p/w500/" + detail.poster_path;
-	            return _react2["default"].createElement(
-	                "div",
-	                { className: "detail" },
-	                _react2["default"].createElement(
-	                    "button",
-	                    { className: "btn btn-primary btn-block fav-btn", onClick: this.props.addToFav.bind(null, this.props.movie) },
-	                    _react2["default"].createElement(
-	                        "h6",
+	            var posterURL = detail.poster_path ? 'https://image.tmdb.org/t/p/w500/' + detail.poster_path : 'images/image-not.jpg';
+	            return _react2['default'].createElement(
+	                'div',
+	                { className: 'detail' },
+	                _react2['default'].createElement(
+	                    'button',
+	                    { className: 'btn btn-primary btn-block fav-btn', onClick: this.props.addToFav.bind(null, this.props.movie) },
+	                    _react2['default'].createElement(
+	                        'h6',
 	                        { style: { color: '#fff' } },
-	                        _react2["default"].createElement("span", { className: "glyphicon glyphicon-heart" }),
-	                        "  Add to favoutite"
+	                        _react2['default'].createElement('span', { className: 'glyphicon glyphicon-heart' }),
+	                        '  Add to favorite'
 	                    )
 	                ),
-	                _react2["default"].createElement(
-	                    "div",
-	                    { className: "headers" },
-	                    _react2["default"].createElement(
-	                        "h2",
-	                        { className: "text-center" },
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'headers' },
+	                    _react2['default'].createElement(
+	                        'h2',
+	                        { className: 'text-center' },
 	                        detail.title
 	                    ),
-	                    _react2["default"].createElement(
-	                        "h4",
-	                        { className: "text-center" },
+	                    _react2['default'].createElement(
+	                        'h4',
+	                        { className: 'text-center' },
 	                        detail.tagline
 	                    )
 	                ),
-	                _react2["default"].createElement(
-	                    "div",
-	                    { className: "row" },
-	                    _react2["default"].createElement(
-	                        "div",
-	                        { className: "col-md-5 col-md-offset-1" },
-	                        _react2["default"].createElement("img", { src: posterURL, className: "detail-poster" })
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'row' },
+	                    _react2['default'].createElement(
+	                        'div',
+	                        { className: 'col-md-5 col-md-offset-1' },
+	                        _react2['default'].createElement('img', { src: posterURL, className: 'detail-poster' })
 	                    ),
-	                    _react2["default"].createElement(
-	                        "div",
-	                        { className: "col-md-6 detail-contailner" },
-	                        _react2["default"].createElement(
-	                            "h4",
-	                            { className: "release-date" },
-	                            "Release Date: ",
+	                    _react2['default'].createElement(
+	                        'div',
+	                        { className: 'col-md-6 detail-contailner' },
+	                        _react2['default'].createElement(
+	                            'h4',
+	                            { className: 'release-date' },
+	                            'Release Date: ',
 	                            detail.release_date
 	                        ),
-	                        _react2["default"].createElement(
-	                            "p",
-	                            { className: "overview" },
+	                        _react2['default'].createElement(
+	                            'p',
+	                            { className: 'overview' },
 	                            detail.overview
 	                        ),
-	                        _react2["default"].createElement(
-	                            "h6",
-	                            { className: "budget" },
-	                            "Budget: ",
+	                        _react2['default'].createElement(
+	                            'h6',
+	                            { className: 'budget' },
+	                            'Budget: ',
 	                            detail.budget
 	                        ),
-	                        _react2["default"].createElement("hr", null),
-	                        _react2["default"].createElement(
-	                            "div",
-	                            { className: "genres" },
-	                            _react2["default"].createElement(
-	                                "h4",
+	                        _react2['default'].createElement('hr', null),
+	                        _react2['default'].createElement(
+	                            'div',
+	                            { className: 'genres' },
+	                            _react2['default'].createElement(
+	                                'h4',
 	                                null,
-	                                "Genres:"
+	                                'Genres:'
 	                            ),
 	                            detail.genres ? detail.genres.map(function (genre, i) {
-	                                return _react2["default"].createElement(
-	                                    "h6",
+	                                return _react2['default'].createElement(
+	                                    'h6',
 	                                    { key: i },
 	                                    genre.name
 	                                );
-	                            }) : _react2["default"].createElement(
-	                                "h6",
-	                                { className: "text-center" },
-	                                "Loading..."
+	                            }) : _react2['default'].createElement(
+	                                'h6',
+	                                { className: 'text-center' },
+	                                'Loading...'
 	                            )
 	                        )
 	                    )
 	                ),
-	                _react2["default"].createElement("hr", null),
-	                _react2["default"].createElement(
-	                    "div",
-	                    { className: "production-companies" },
-	                    _react2["default"].createElement(
-	                        "h4",
+	                _react2['default'].createElement('hr', null),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'production-companies' },
+	                    _react2['default'].createElement(
+	                        'h4',
 	                        null,
-	                        "Production companies:"
+	                        'Production companies:'
 	                    ),
 	                    detail.production_companies ? detail.production_companies.map(function (company, i) {
-	                        return _react2["default"].createElement(
-	                            "h6",
+	                        return _react2['default'].createElement(
+	                            'h6',
 	                            { key: i },
 	                            company.name
 	                        );
-	                    }) : _react2["default"].createElement(
-	                        "h6",
-	                        { className: "text-center" },
-	                        "Loading..."
+	                    }) : _react2['default'].createElement(
+	                        'h6',
+	                        { className: 'text-center' },
+	                        'Loading...'
 	                    )
 	                ),
-	                _react2["default"].createElement("hr", null),
-	                _react2["default"].createElement(
-	                    "div",
-	                    { className: "production-countries" },
-	                    _react2["default"].createElement(
-	                        "h4",
+	                _react2['default'].createElement('hr', null),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'production-countries' },
+	                    _react2['default'].createElement(
+	                        'h4',
 	                        null,
-	                        "Production countries:"
+	                        'Production countries:'
 	                    ),
 	                    detail.production_countries ? detail.production_countries.map(function (country, i) {
-	                        return _react2["default"].createElement(
-	                            "h6",
+	                        return _react2['default'].createElement(
+	                            'h6',
 	                            { key: i },
 	                            country.name
 	                        );
-	                    }) : _react2["default"].createElement(
-	                        "h6",
-	                        { className: "text-center" },
-	                        "Loading..."
+	                    }) : _react2['default'].createElement(
+	                        'h6',
+	                        { className: 'text-center' },
+	                        'Loading...'
 	                    )
 	                ),
-	                _react2["default"].createElement("hr", null),
-	                _react2["default"].createElement(
-	                    "div",
-	                    { className: "spoken-languages" },
-	                    _react2["default"].createElement(
-	                        "h4",
+	                _react2['default'].createElement('hr', null),
+	                _react2['default'].createElement(
+	                    'div',
+	                    { className: 'spoken-languages' },
+	                    _react2['default'].createElement(
+	                        'h4',
 	                        null,
-	                        "Spoken Languages:"
+	                        'Spoken Languages:'
 	                    ),
 	                    detail.spoken_languages ? detail.spoken_languages.map(function (language, i) {
-	                        return _react2["default"].createElement(
-	                            "h6",
+	                        return _react2['default'].createElement(
+	                            'h6',
 	                            { key: i },
 	                            language.name
 	                        );
-	                    }) : _react2["default"].createElement(
-	                        "h6",
-	                        { className: "text-center" },
-	                        "Loading..."
+	                    }) : _react2['default'].createElement(
+	                        'h6',
+	                        { className: 'text-center' },
+	                        'Loading...'
 	                    )
 	                )
 	            );
@@ -31428,16 +31540,16 @@
 	    return Detail;
 	})(_react.Component);
 
-	exports["default"] = Detail;
-	module.exports = exports["default"];
+	exports['default'] = Detail;
+	module.exports = exports['default'];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Detail.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Detail.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 314 */
 /***/ function(module, exports, __webpack_require__) {
 
-	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
+	/* REACT HOT LOADER */ if (false) { (function () { var ReactHotAPI = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-api\\modules\\index.js"), RootInstanceProvider = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\RootInstanceProvider.js"), ReactMount = require("react-dom/lib/ReactMount"), React = require("react"); module.makeHot = module.hot.data ? module.hot.data.makeHot : ReactHotAPI(function () { return RootInstanceProvider.getRootInstances(ReactMount); }, React); })(); } try { (function () {
 
 	'use strict';
 
@@ -31520,7 +31632,7 @@
 	exports['default'] = Recommendations;
 	module.exports = exports['default'];
 
-	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\movie-git\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Recommendations.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
+	/* REACT HOT LOADER */ }).call(this); } finally { if (false) { (function () { var foundReactClasses = module.hot.data && module.hot.data.foundReactClasses || false; if (module.exports && module.makeHot) { var makeExportsHot = require("E:\\projects\\react-redux-movie-app\\node_modules\\react-hot-loader\\makeExportsHot.js"); if (makeExportsHot(module, require("react"))) { foundReactClasses = true; } var shouldAcceptModule = true && foundReactClasses; if (shouldAcceptModule) { module.hot.accept(function (err) { if (err) { console.error("Cannot apply hot update to " + "Recommendations.jsx" + ": " + err.message); } }); } } module.hot.dispose(function (data) { data.makeHot = module.makeHot; data.foundReactClasses = foundReactClasses; }); })(); } }
 
 /***/ },
 /* 315 */
@@ -31557,7 +31669,7 @@
 
 
 	// module
-	exports.push([module.id, ".active {\n  font-weight: bold;\n  border-bottom: 2px solid #000;\n}\n.navigation {\n  width: 100%;\n  min-height: 50px;\n  font-size: 20px;\n  border-bottom: 1px solid #d3d3d3;\n  box-shadow: 2px 4px 8px;\n  background-color: #fff;\n}\n.navigation .hanle-expansion {\n  width: 100%;\n  background: #d3d3d3;\n  text-align: left;\n  box-sizing: border-box;\n  padding: 15px 10px;\n  cursor: pointer;\n  color: #000;\n  display: none;\n}\n.navigation .nav-items-container {\n  background-color: #fff;\n  overflow: hidden;\n  list-style: none;\n  text-align: center;\n  height: 100%;\n  -webkit-transition: max-height 0.6s;\n  transition: max-height 0.6s;\n}\n.navigation .nav-items-container .nav-item {\n  display: inline-block;\n  padding: 20px;\n  height: 100%;\n  cursor: pointer;\n}\n@media screen and (max-width: 480px) {\n  .nav-items-container {\n    max-height: 0;\n  }\n  .show-nav {\n    max-height: 20em;\n  }\n  .navigation .nav-items-container .nav-item {\n    box-sizing: border-box;\n    width: 100%;\n    padding: 20px;\n  }\n  .navigation .hanle-expansion {\n    display: block;\n  }\n}\n.search-bar {\n  background-color: #fff;\n  width: 100%;\n  padding: 10px;\n  border-bottom: 1px solid #d3d3d3;\n  margin: 50px auto;\n}\n.search-bar .search-controls input {\n  width: 90%;\n  background-color: #fff;\n  outline: 0;\n  padding: 10px;\n  font-size: 20px;\n  font-weight: bold;\n  border: none;\n  color: #000;\n  text-align: center;\n}\n.search-bar .search-controls .search-button {\n  width: 10%;\n  padding: 10px;\n  font-size: 15px;\n  font-weight: bold;\n  background-color: #5CD172;\n  color: #fff;\n  border: none;\n}\n.movie-info {\n  width: 90%;\n  padding: 0;\n  overflow: hidden;\n  max-height: 600px;\n  margin: auto;\n  margin-bottom: 20px;\n  border: 1px solid #d3d3d3;\n  border-radius: 10px;\n  box-shadow: 2px 4px 8px #000;\n}\n.movie-info:hover {\n  box-shadow: 4px 6px 10px #000;\n}\n.movie-info .fav-btn {\n  margin: 0 auto;\n}\n.movie-info .title {\n  font-size: 20px;\n  color: #000;\n}\n.movie-info .poster {\n  width: 100%;\n  margin: 0 auto;\n}\n.movie-info .genres {\n  margin: auto;\n}\n.movie-info .genres p {\n  float: left;\n  margin-left: 5px;\n  padding: 5px;\n  background-color: #B578FF;\n  color: #fff;\n  border-radius: 10px;\n}\n.recommendations {\n  background-color: #fff;\n  padding: 20px;\n  border: 1px solid #d3d3d3;\n  overflow: hidden;\n  width: 85%;\n  margin: 40px auto;\n}\n.recommendations h3 {\n  color: #000;\n}\n.recommendations .single {\n  width: 90%;\n  padding: 10px;\n  margin: 20px auto;\n  height: 150px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  cursor: pointer;\n  border-bottom: 1px solid #d3d3d3;\n}\n.recommendations .single:hover {\n  background-color: #f0f8ff;\n}\n.recommendations .single h5 {\n  margin: auto;\n  font-size: 25px;\n  font-weight: bold;\n  width: 60%;\n  color: #000;\n}\n.recommendations .single img {\n  width: 10%;\n  -ms-flex-preferred-size: 50px;\n      flex-basis: 50px;\n}\n.movie-detail {\n  background-color: #9F5BAD;\n  margin: 20px auto;\n  overflow: hidden;\n  height: 100%;\n}\n.movie-detail .detail {\n  background-color: #fff;\n  width: 85%;\n  margin: 0 auto;\n}\n.movie-detail .detail .headers {\n  margin: 20px 0;\n  border-bottom: 1px solid #d3d3d3;\n}\n.movie-detail .detail .headers h2 {\n  color: #000;\n  padding: 10px;\n}\n.movie-detail .detail .headers h4 {\n  color: #000;\n  padding: 10px;\n}\n.movie-detail .detail .detail-poster {\n  width: 95%;\n  margin: 0 auto;\n}\n.movie-detail .detail .detail-contailner {\n  padding: 0 20px;\n  color: #000;\n}\n.movie-detail .detail .detail-contailner .release-date {\n  font-size: 20px;\n  color: #000;\n}\n.movie-detail .detail .detail-contailner .overview {\n  font-size: 15px;\n  line-height: 25px;\n}\n.movie-detail .detail .detail-contailner .budget {\n  font-size: 20px;\n  color: #000;\n}\n.movie-detail .detail .detail-contailner .genres {\n  width: 100%;\n  overflow: hidden;\n}\n.movie-detail .detail .detail-contailner .genres h4 {\n  color: #000;\n  padding: 10px;\n}\n.movie-detail .detail .detail-contailner .genres h6 {\n  font-size: 15px;\n  float: left;\n  margin-left: 10px;\n  padding: 5px;\n  background-color: #9F5BAD;\n  color: #fff;\n  border-radius: 10px;\n}\n.movie-detail .detail .production-countries,\n.movie-detail .detail .spoken-languages,\n.movie-detail .detail .production-companies {\n  margin: 20px auto;\n  width: 50%;\n  padding: 20px;\n}\n.movie-detail .detail .production-countries h4,\n.movie-detail .detail .spoken-languages h4,\n.movie-detail .detail .production-companies h4 {\n  color: #000;\n  padding: 10px;\n  text-align: center;\n}\n.movie-detail .detail .production-countries h6,\n.movie-detail .detail .spoken-languages h6,\n.movie-detail .detail .production-companies h6 {\n  font-size: 20px;\n  padding: 5px;\n  background-color: #5CD172;\n  color: #fff;\n  border-radius: 10px;\n  text-align: center;\n}\n.welcome-page {\n  color: #fff;\n}\n.welcome-page .welcome-block {\n  background-color: #9F5BAD;\n  background-image: -webkit-linear-gradient(top left, #9F5BAD, #B578FF, #EEB6FF);\n  background-image: linear-gradient(to bottom right, #9F5BAD, #B578FF, #EEB6FF);\n  height: 100vh;\n  text-align: center;\n  margin: auto;\n  padding-top: 10%;\n}\n.welcome-page .welcome-block .welcome-header {\n  color: #fff;\n  font-size: 65px;\n  text-shadow: 2px 4px 16px #000;\n}\n.welcome-page .welcome-block .welcome-message {\n  font-size: 20px;\n  line-height: 65px;\n  margin-top: 20px;\n}\n.welcome-page .welcome-block .one {\n  font-size: 35px;\n}\n.welcome-page .features-block {\n  background-color: #9F5BAD;\n  background-image: -webkit-linear-gradient(top left, #9F5BAD, #B578FF, #EEB6FF);\n  background-image: linear-gradient(to bottom right, #9F5BAD, #B578FF, #EEB6FF);\n  height: 100vh;\n  text-align: center;\n  margin: auto;\n  padding-top: 10%;\n  background-image: -webkit-linear-gradient(top right, #EEB6FF, #B2A8FF, #A397FF);\n  background-image: linear-gradient(to bottom left, #EEB6FF, #B2A8FF, #A397FF);\n}\n.welcome-page .features-block .welcome-header {\n  color: #fff;\n  font-size: 65px;\n  text-shadow: 2px 4px 16px #000;\n}\n.welcome-page .features-block .welcome-message {\n  font-size: 20px;\n  line-height: 65px;\n  margin-top: 20px;\n}\n.welcome-page .features-block .one {\n  font-size: 35px;\n}\n.welcome-page .features-block .features-header {\n  color: #fff;\n  font-size: 65px;\n  text-shadow: 2px 4px 16px #000;\n}\n.welcome-page .features-block .features-container {\n  width: 75%;\n  margin: 5% auto;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n}\n.welcome-page .features-block .features-container .feature {\n  width: 25%;\n  text-align: center;\n}\n.welcome-page .features-block .features-container .feature i {\n  margin: 5% auto;\n}\n.welcome-page .features-block .features-container .feature .feature-description {\n  font-size: 20px;\n}\n.about-page {\n  height: 100vh;\n  background-color: #fff;\n  color: #000;\n}\n.about-page .about-info {\n  width: 50%;\n  margin: 0 auto;\n}\n.about-page .about-info .about-header {\n  color: #000;\n  text-align: center;\n  margin: 40px;\n  font-size: 65px;\n}\n.about-page .about-info .about-content {\n  width: 100%;\n}\n.about-page .about-info .about-content .about-description {\n  padding: 10px;\n  font-size: 20px;\n}\n.about-page .about-info .about-content .used-tools {\n  box-sizing: border-box;\n  list-style: none;\n  margin: 0 auto;\n}\n.about-page .about-info .about-content .used-tools .tool {\n  width: 100%;\n  text-align: left;\n  font-size: 20px;\n  padding: 10px;\n}\n.about-page .about-info .about-content .used-tools .tool:hover {\n  background-color: #f0f8ff;\n}\n.about-page .about-info .about-content .used-tools .tool a {\n  text-decoration: none;\n}\n.favs {\n  margin-top: 5%;\n}\n.favs .fav-container {\n  width: 100%;\n  background-color: #f0f8ff;\n}\n.favs .fav-container .fav {\n  width: 100%;\n  height: 150px;\n  padding: 1%;\n  border-bottom: 1px solid #d3d3d3;\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n}\n.favs .fav-container .fav img {\n  width: 10%;\n  -ms-flex-preferred-size: 50px;\n      flex-basis: 50px;\n}\n.favs .fav-container .fav p {\n  margin: auto;\n  font-size: 15px;\n  font-weight: bold;\n  width: 50%;\n  color: #000;\n}\n.favs .fav-container .fav .delete {\n  color: #A397FF;\n  cursor: pointer;\n}\n.favs .fav-container .fav .delete:hover {\n  color: #000;\n}\nbody {\n  margin: 0;\n  padding-top: 70px;\n  background: #fff;\n  font-family: Verdana, Geneva, Tahoma, sans-serif;\n}\n", ""]);
+	exports.push([module.id, ".active {\n  font-weight: bold;\n  border-bottom: 2px solid #000;\n}\n.navigation {\n  width: 100%;\n  min-height: 50px;\n  font-size: 20px;\n  border-bottom: 1px solid #d3d3d3;\n  box-shadow: 2px 4px 8px;\n  background-color: #fff;\n}\n.navigation .hanle-expansion {\n  width: 100%;\n  background: #d3d3d3;\n  text-align: left;\n  box-sizing: border-box;\n  padding: 15px 10px;\n  cursor: pointer;\n  color: #000;\n  display: none;\n}\n.navigation .nav-items-container {\n  background-color: #fff;\n  overflow: hidden;\n  list-style: none;\n  text-align: center;\n  height: 100%;\n  -webkit-transition: max-height 0.6s;\n  transition: max-height 0.6s;\n}\n.navigation .nav-items-container .nav-item {\n  display: inline-block;\n  padding: 20px;\n  height: 100%;\n  cursor: pointer;\n}\n@media screen and (max-width: 480px) {\n  .nav-items-container {\n    max-height: 0;\n  }\n  .show-nav {\n    max-height: 20em;\n  }\n  .navigation .nav-items-container .nav-item {\n    box-sizing: border-box;\n    width: 100%;\n    padding: 20px;\n  }\n  .navigation .hanle-expansion {\n    display: block;\n  }\n}\n.search-bar {\n  background-color: #fff;\n  width: 100%;\n  padding: 10px;\n  border-bottom: 1px solid #d3d3d3;\n  margin: 50px auto;\n}\n.search-bar .error {\n  text-align: center;\n  color: #EE4F4B;\n  font-size: 20px;\n}\n.search-bar .search-controls {\n  position: relative;\n  overflow: hidden;\n}\n.search-bar .search-controls input {\n  float: left;\n  width: 85%;\n  background-color: #fff;\n  outline: 0;\n  padding: 10px;\n  font-size: 20px;\n  font-weight: bold;\n  border: none;\n  color: #000;\n  text-align: center;\n}\n.search-bar .search-controls .clear {\n  text-align: center;\n  float: left;\n  width: 5%;\n  font-size: 30px;\n  cursor: pointer;\n}\n.search-bar .search-controls .search-button {\n  float: left;\n  width: 10%;\n  padding: 10px;\n  font-size: 15px;\n  font-weight: bold;\n  background-color: #5CD172;\n  color: #fff;\n  border: none;\n}\n@media screen and (max-width: 1275px) {\n  .search-bar .search-controls .search-button {\n    font-size: 12px;\n    width: 15%;\n  }\n  .search-bar .search-controls input {\n    width: 80%;\n  }\n}\n@media screen and (max-width: 510px) {\n  .search-bar .search-controls .search-button {\n    font-size: 12px;\n    width: 10%;\n  }\n  .search-bar .search-controls input {\n    width: 85%;\n    font-size: 15px;\n  }\n  .search-bar .search-controls .clear {\n    font-size: 15px;\n  }\n}\n@media screen and (max-width: 385px) {\n  .search-bar .search-controls .search-button {\n    font-size: 10px;\n    width: 20%;\n    padding: 0;\n  }\n  .search-bar .search-controls input {\n    width: 75%;\n  }\n  .search-bar .search-controls .clear {\n    font-size: 10px;\n  }\n}\n.movie-info {\n  width: 90%;\n  padding: 0;\n  overflow: hidden;\n  max-height: 600px;\n  margin: auto;\n  margin-bottom: 20px;\n  border: 1px solid #d3d3d3;\n  border-radius: 10px;\n  box-shadow: 2px 4px 8px #000;\n}\n.movie-info:hover {\n  box-shadow: 4px 6px 10px #000;\n}\n.movie-info .fav-btn {\n  margin: 0 auto;\n}\n.movie-info .title {\n  font-size: 20px;\n  color: #000;\n}\n.movie-info .poster {\n  width: 100%;\n  margin: 0 auto;\n}\n.movie-info .genres {\n  margin: auto;\n}\n.movie-info .genres p {\n  float: left;\n  margin-left: 5px;\n  padding: 5px;\n  background-color: #B578FF;\n  color: #fff;\n  border-radius: 10px;\n}\n@media screen and (max-width: 415px) {\n  .movie-info .title {\n    font-size: 15px;\n    font-weight: bold;\n  }\n  .movie-info .genres p {\n    margin-left: 2px;\n    padding: 2px;\n  }\n}\n@media screen and (max-width: 375px) {\n  .movie-info .title {\n    font-size: 12px;\n    font-weight: bold;\n  }\n  .movie-info .genres p {\n    font-size: 12px;\n  }\n}\n.recommendations {\n  background-color: #fff;\n  padding: 20px;\n  border: 1px solid #d3d3d3;\n  overflow: hidden;\n  width: 85%;\n  margin: 40px auto;\n}\n.recommendations h3 {\n  color: #000;\n  margin: 20px;\n}\n.recommendations .single {\n  width: 90%;\n  padding: 10px;\n  margin: 0 55px;\n  height: 150px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  cursor: pointer;\n  border-bottom: 1px solid #d3d3d3;\n}\n.recommendations .single:hover {\n  background-color: #f0f8ff;\n}\n.recommendations .single h5 {\n  margin: auto;\n  font-size: 25px;\n  font-weight: bold;\n  width: 60%;\n  color: #000;\n}\n.recommendations .single img {\n  width: 10%;\n  -ms-flex-preferred-size: 50px;\n      flex-basis: 50px;\n}\n@media screen and (max-width: 900px) {\n  .recommendations h3 {\n    font-size: 20px;\n  }\n  .recommendations .single {\n    margin: auto;\n  }\n  .recommendations .single h5 {\n    font-size: 15px;\n    width: 40%;\n  }\n  .recommendations .single img {\n    width: 20%;\n  }\n}\n.movie-detail {\n  background-color: #9F5BAD;\n  margin: 20px auto;\n  overflow: hidden;\n  height: 100%;\n}\n.movie-detail .detail {\n  background-color: #fff;\n  width: 85%;\n  margin: 0 auto;\n}\n.movie-detail .detail .headers {\n  margin: 20px 0;\n  border-bottom: 1px solid #d3d3d3;\n}\n.movie-detail .detail .headers h2 {\n  color: #000;\n  padding: 10px;\n}\n.movie-detail .detail .headers h4 {\n  color: #000;\n  padding: 10px;\n}\n.movie-detail .detail .detail-poster {\n  width: 95%;\n  margin: 0 auto;\n}\n.movie-detail .detail .detail-contailner {\n  padding: 0 20px;\n  color: #000;\n}\n.movie-detail .detail .detail-contailner .release-date {\n  font-size: 20px;\n  color: #000;\n}\n.movie-detail .detail .detail-contailner .overview {\n  font-size: 15px;\n  line-height: 25px;\n}\n.movie-detail .detail .detail-contailner .budget {\n  font-size: 20px;\n  color: #000;\n}\n.movie-detail .detail .detail-contailner .genres {\n  width: 100%;\n  overflow: hidden;\n}\n.movie-detail .detail .detail-contailner .genres h4 {\n  color: #000;\n  padding: 10px;\n}\n.movie-detail .detail .detail-contailner .genres h6 {\n  font-size: 15px;\n  float: left;\n  margin-left: 10px;\n  padding: 5px;\n  background-color: #9F5BAD;\n  color: #fff;\n  border-radius: 10px;\n}\n.movie-detail .detail .production-countries,\n.movie-detail .detail .spoken-languages,\n.movie-detail .detail .production-companies {\n  margin: 20px auto;\n  width: 50%;\n  padding: 20px;\n}\n.movie-detail .detail .production-countries h4,\n.movie-detail .detail .spoken-languages h4,\n.movie-detail .detail .production-companies h4 {\n  color: #000;\n  padding: 10px;\n  text-align: center;\n}\n.movie-detail .detail .production-countries h6,\n.movie-detail .detail .spoken-languages h6,\n.movie-detail .detail .production-companies h6 {\n  font-size: 20px;\n  padding: 5px;\n  background-color: #5CD172;\n  color: #fff;\n  border-radius: 10px;\n  text-align: center;\n}\n.welcome-page {\n  color: #fff;\n}\n.welcome-page .welcome-block {\n  background-color: #9F5BAD;\n  background-image: -webkit-linear-gradient(top left, #9F5BAD, #B578FF, #EEB6FF);\n  background-image: linear-gradient(to bottom right, #9F5BAD, #B578FF, #EEB6FF);\n  min-height: 100vh;\n  overflow: hidden;\n  text-align: center;\n  margin: auto;\n  padding-top: 10%;\n}\n.welcome-page .welcome-block .welcome-header {\n  color: #fff;\n  font-size: 65px;\n  text-shadow: 2px 4px 16px #000;\n}\n.welcome-page .welcome-block .welcome-message {\n  font-size: 20px;\n  line-height: 65px;\n  margin-top: 20px;\n}\n.welcome-page .welcome-block .one {\n  font-size: 35px;\n}\n.welcome-page .features-block {\n  background-color: #9F5BAD;\n  background-image: -webkit-linear-gradient(top left, #9F5BAD, #B578FF, #EEB6FF);\n  background-image: linear-gradient(to bottom right, #9F5BAD, #B578FF, #EEB6FF);\n  min-height: 100vh;\n  overflow: hidden;\n  text-align: center;\n  margin: auto;\n  padding-top: 10%;\n  background-image: -webkit-linear-gradient(top right, #EEB6FF, #B2A8FF, #A397FF);\n  background-image: linear-gradient(to bottom left, #EEB6FF, #B2A8FF, #A397FF);\n}\n.welcome-page .features-block .welcome-header {\n  color: #fff;\n  font-size: 65px;\n  text-shadow: 2px 4px 16px #000;\n}\n.welcome-page .features-block .welcome-message {\n  font-size: 20px;\n  line-height: 65px;\n  margin-top: 20px;\n}\n.welcome-page .features-block .one {\n  font-size: 35px;\n}\n.welcome-page .features-block .features-header {\n  color: #fff;\n  font-size: 65px;\n  text-shadow: 2px 4px 16px #000;\n}\n.welcome-page .features-block .features-container {\n  width: 75%;\n  margin: 5% auto;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n}\n.welcome-page .features-block .features-container .feature {\n  width: 25%;\n  text-align: center;\n}\n.welcome-page .features-block .features-container .feature i {\n  margin: 5% auto;\n}\n.welcome-page .features-block .features-container .feature .feature-description {\n  font-size: 20px;\n}\n@media screen and (max-width: 750px) {\n  .welcome-page .welcome-block {\n    max-height: 100vh;\n  }\n  .welcome-page .welcome-block .welcome-header {\n    font-size: 35px;\n  }\n  .welcome-page .welcome-block .welcome-message {\n    font-size: 20px;\n    line-height: 35px;\n  }\n  .welcome-page .features-block .features-header {\n    font-size: 35px;\n  }\n  .welcome-page .features-block .features-container .feature {\n    width: 80%;\n    margin: auto;\n  }\n  .welcome-page .features-block .features-container .feature i {\n    font-size: 25px;\n    margin: 10px auto;\n  }\n  .welcome-page .features-block .features-container .feature .feature-description {\n    font-size: 20px;\n    line-height: 25px;\n  }\n}\n.about-page {\n  height: 100vh;\n  background-color: #fff;\n  color: #000;\n}\n.about-page .about-info {\n  width: 50%;\n  margin: 0 auto;\n}\n.about-page .about-info .about-header {\n  color: #000;\n  text-align: center;\n  margin: 40px;\n  font-size: 65px;\n}\n.about-page .about-info .about-content {\n  width: 100%;\n}\n.about-page .about-info .about-content .about-description {\n  padding: 10px;\n  font-size: 20px;\n}\n.about-page .about-info .about-content .used-tools {\n  box-sizing: border-box;\n  list-style: none;\n  margin: 0 auto;\n}\n.about-page .about-info .about-content .used-tools .tool {\n  width: 100%;\n  text-align: left;\n  font-size: 20px;\n  padding: 10px;\n}\n.about-page .about-info .about-content .used-tools .tool:hover {\n  background-color: #f0f8ff;\n}\n.about-page .about-info .about-content .used-tools .tool a {\n  text-decoration: none;\n}\n@media screen and (max-width: 705px) {\n  .about-page .about-info {\n    width: 75%;\n  }\n  .about-page .about-info .about-header {\n    font-size: 35px;\n  }\n  .about-page .about-info .about-content .about-description {\n    font-size: 15px;\n  }\n  .about-page .about-info .about-content .used-tools .tool {\n    font-size: 15px;\n  }\n}\n.favs {\n  margin-top: 5%;\n}\n.favs ::-webkit-scrollbar {\n  width: 10px;\n  border-radius: 10px;\n}\n.favs ::-webkit-scrollbar-thumb {\n  background-image: -webkit-linear-gradient(top, #EEB6FF, #A397FF);\n  background-image: linear-gradient(to bottom, #EEB6FF, #A397FF);\n  border-radius: 10px;\n}\n.favs ::-webkit-scrollbar-track {\n  background: #fff;\n}\n.favs .fav-container {\n  width: 100%;\n  background-color: #fff;\n  min-height: 350px;\n  max-height: 350px;\n  overflow: scroll;\n  overflow-x: hidden;\n  border: 1px solid #d3d3d3;\n  border-bottom-left-radius: 10px;\n  border-bottom-right-radius: 10px;\n}\n.favs .fav-container .placeholder {\n  color: #000;\n  margin-top: 10%;\n}\n.favs .fav-container .fav {\n  width: 100%;\n  height: 150px;\n  padding: 1%;\n  border-bottom: 1px solid #d3d3d3;\n  position: relative;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -ms-flex-wrap: wrap;\n      flex-wrap: wrap;\n  -webkit-box-pack: justify;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n}\n.favs .fav-container .fav img {\n  width: 10%;\n  -ms-flex-preferred-size: 50px;\n      flex-basis: 50px;\n}\n.favs .fav-container .fav p {\n  margin: auto;\n  font-size: 15px;\n  font-weight: bold;\n  width: 50%;\n  color: #000;\n}\n.favs .fav-container .fav .delete {\n  color: #A397FF;\n  cursor: pointer;\n}\n.favs .fav-container .fav .delete:hover {\n  color: #000;\n}\n@media screen and (max-width: 760px) {\n  .favs .fav-container .fav img {\n    width: 20%;\n  }\n  .favs .fav-container .fav p {\n    width: 30%;\n    font-size: 15px;\n  }\n}\nbody {\n  margin: 0;\n  padding-top: 70px;\n  background: #fff;\n  font-family: Verdana, Geneva, Tahoma, sans-serif;\n}\n", ""]);
 
 	// exports
 
@@ -31905,10 +32017,6 @@
 	var _favs = __webpack_require__(329);
 
 	var _favs2 = _interopRequireDefault(_favs);
-
-	var _search = __webpack_require__(330);
-
-	var _search2 = _interopRequireDefault(_search);
 
 	var rootReducer = (0, _redux.combineReducers)({ movies: _movies2['default'], favs: _favs2['default'], detail: _detail2['default'], recommendations: _recommendations2['default'], genres: _genres2['default'], routing: _reactRouterRedux.routerReducer });
 
@@ -32532,53 +32640,6 @@
 	    value: true
 	});
 
-	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-	var _constantsConstants = __webpack_require__(272);
-
-	var initialState = {
-	    fetched: false,
-	    movies: [],
-	    error: null
-	};
-
-	function search(state, action) {
-	    if (state === undefined) state = initialState;
-
-	    switch (action.type) {
-	        case _constantsConstants.RECEIVE_QUERY:
-	            {
-	                return _extends({}, state, {
-	                    fetched: true,
-	                    movies: action.payload.results
-	                });
-	                break;
-	            }
-	        case _constantsConstants.RECEIVE_QUERY_ERROR:
-	            {
-	                return _extends({}, state, {
-	                    fetched: false,
-	                    error: action.payload
-	                });
-	                break;
-	            }
-	    }
-	    return state;
-	}
-
-	exports['default'] = search;
-	module.exports = exports['default'];
-
-/***/ },
-/* 331 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, '__esModule', {
-	    value: true
-	});
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 	var _redux = __webpack_require__(243);
@@ -32587,11 +32648,11 @@
 
 	var _reactRouter = __webpack_require__(187);
 
-	var _reduxLogger = __webpack_require__(332);
+	var _reduxLogger = __webpack_require__(331);
 
 	var _reduxLogger2 = _interopRequireDefault(_reduxLogger);
 
-	var _reduxThunk = __webpack_require__(338);
+	var _reduxThunk = __webpack_require__(337);
 
 	var _reduxThunk2 = _interopRequireDefault(_reduxThunk);
 
@@ -32614,7 +32675,7 @@
 	exports['default'] = store;
 
 /***/ },
-/* 332 */
+/* 331 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32625,11 +32686,11 @@
 	  value: true
 	});
 
-	var _core = __webpack_require__(333);
+	var _core = __webpack_require__(332);
 
-	var _helpers = __webpack_require__(334);
+	var _helpers = __webpack_require__(333);
 
-	var _defaults = __webpack_require__(337);
+	var _defaults = __webpack_require__(336);
 
 	var _defaults2 = _interopRequireDefault(_defaults);
 
@@ -32732,7 +32793,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 333 */
+/* 332 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32742,9 +32803,9 @@
 	});
 	exports.printBuffer = printBuffer;
 
-	var _helpers = __webpack_require__(334);
+	var _helpers = __webpack_require__(333);
 
-	var _diff = __webpack_require__(335);
+	var _diff = __webpack_require__(334);
 
 	var _diff2 = _interopRequireDefault(_diff);
 
@@ -32873,7 +32934,7 @@
 	}
 
 /***/ },
-/* 334 */
+/* 333 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -32897,7 +32958,7 @@
 	var timer = exports.timer = typeof performance !== "undefined" && performance !== null && typeof performance.now === "function" ? performance : Date;
 
 /***/ },
-/* 335 */
+/* 334 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -32907,7 +32968,7 @@
 	});
 	exports.default = diffLogger;
 
-	var _deepDiff = __webpack_require__(336);
+	var _deepDiff = __webpack_require__(335);
 
 	var _deepDiff2 = _interopRequireDefault(_deepDiff);
 
@@ -32993,7 +33054,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 336 */
+/* 335 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global) {/*!
@@ -33422,7 +33483,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 337 */
+/* 336 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -33473,7 +33534,7 @@
 	module.exports = exports['default'];
 
 /***/ },
-/* 338 */
+/* 337 */
 /***/ function(module, exports) {
 
 	'use strict';
