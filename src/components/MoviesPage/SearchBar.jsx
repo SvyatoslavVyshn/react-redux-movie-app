@@ -17,8 +17,7 @@ class SearchBar extends Component{
 
     handleTextChange(e){
         const { movies } = this.props;
-        const val = e.target.value
-        this.setState({text: val.trim().toLowerCase()});
+        this.setState({text: e.target.value});
         this.state.text.length > 0 ? this.setState({isText: true}) : this.setState({isText: false});
     }
 
