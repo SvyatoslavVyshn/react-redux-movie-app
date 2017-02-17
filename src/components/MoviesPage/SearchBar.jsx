@@ -17,7 +17,8 @@ class SearchBar extends Component{
 
     handleTextChange(e){
         const { movies } = this.props;
-        this.setState({text: e.target.value});
+        const val = e.target.value
+        this.setState({text: val.trim().toLowerCase()});
         this.state.text.length > 0 ? this.setState({isText: true}) : this.setState({isText: false});
     }
 
@@ -25,29 +26,23 @@ class SearchBar extends Component{
         e.preventDefault();
         this.setState({error: null});
         this.props.handleSearch(this.state.text);
+        this.props.onLoadingStop();
     }
 
     handleSearchActive(){
         this.setState({text: '', error:''});
+        this.props.cancelSearch();
+        this.props.onLoadingStart();
     }
 
     handleEmptySearch(e){
         e.preventDefault();
-        this.setState({error: 'Please, enter movie name!'})
+        this.setState({error: 'Please, enter movie name!'});
     }
 
     render(){ 
         const { isText, text } = this.state;
         const handler = text ? this.handleMovieSearch : this.handleEmptySearch;
-        const styleActive = {
-            cursor: 'pointer',
-            backgroundColor: '#5CD172'
-        };
-        const styleDisabled = {
-            cursor: 'not-allowed',
-            backgroundColor: '#d3d3d3'
-        };
-        const style = isText ? styleActive : styleDisabled;
         const styleX = text.length > 0 ? { display: 'block' } : {display: 'none'}
         return(
             <div className="search-bar">
@@ -60,9 +55,7 @@ class SearchBar extends Component{
                         
                         <span className="clear" style={styleX} onClick={this.handleSearchActive}>X</span>
 
-                        <button type="submit" 
-                        className="search-button" 
-                        style={styleActive}> Search </button>
+                        <button type="submit" className="search-button"> Search </button>
                     </form>
                 </div>
                 {this.state.error && <h6 className="error">{this.state.error}</h6>}

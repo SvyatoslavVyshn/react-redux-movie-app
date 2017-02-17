@@ -21,3 +21,5 @@ export const RECEIVE_QUERY =                    "RECEIVE_QUERY";
 export const RECEIVE_QUERY_ERROR =              "RECEIVE_QUERY_ERROR";
 
 export const DELETE_FAV =                       "DELETE_FAV";
+
+export const CANCEL_SEARCH =                    "CANCEL_SEARCH";

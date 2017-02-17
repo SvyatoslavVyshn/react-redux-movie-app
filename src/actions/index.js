@@ -8,7 +8,9 @@ import { RECEIVE_POPULAR_MOVIES, RECEIVE_POPULAR_MOVIES_ERROR,
          
          ADD_TO_FAV, RECEIVE_QUERY,
          
-         RECEIVE_QUERY_ERROR, DELETE_FAV } from '../constants/constants';
+         RECEIVE_QUERY_ERROR, DELETE_FAV,
+         
+         CANCEL_SEARCH } from '../constants/constants';
 
 import axios from 'axios';
 
@@ -103,5 +105,11 @@ export function handleSearch (query) {
             .catch((err) => {
                 dispatch({type: RECEIVE_QUERY_ERROR, payload: err})
             })
+    }
+}
+
+export function cancelSearch () {
+    return {
+        type:  CANCEL_SEARCH
     }
 }

@@ -1,4 +1,7 @@
-import { RECEIVE_POPULAR_MOVIES_ERROR, RECEIVE_POPULAR_MOVIES, RECEIVE_QUERY, RECEIVE_QUERY_ERROR } from '../constants/constants';
+import { 
+         RECEIVE_POPULAR_MOVIES_ERROR, RECEIVE_POPULAR_MOVIES, 
+         RECEIVE_QUERY, RECEIVE_QUERY_ERROR, CANCEL_SEARCH 
+        }  from '../constants/constants';
 
 const initialState = {
     fetched: false,
@@ -28,7 +31,7 @@ function movies (state = initialState, action){
             return{
                 ...state,
                 fetched: true,
-                movies: action.payload.results
+                movies: [...action.payload.results]
             }
             break;
         }
@@ -37,6 +40,13 @@ function movies (state = initialState, action){
                 ...state,
                 fetched: false,
                 error: action.payload
+            }
+            break;
+        }
+        case CANCEL_SEARCH: {
+            return{
+                ...state,
+                movies: []
             }
             break;
         }
