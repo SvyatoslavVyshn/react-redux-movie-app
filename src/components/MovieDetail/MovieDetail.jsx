@@ -3,10 +3,9 @@ import Detail from './Detail.jsx';
 import Recommendations from './Recommendations.jsx';
 
 
-class MovieDetail extends Component{
-    render(){
-        const { movies, recommendations } = this.props;
-        const { movieId } = this.props.params;
+const MovieDetail = (props) => {
+        const { movies, recommendations } = props;
+        const { movieId } = props.params;
         const i = movies.findIndex( (movie) => movie.id == movieId );
         const movie = movies[i];
         if(!movies || !movie){
@@ -15,20 +14,19 @@ class MovieDetail extends Component{
                 return (
                     <div className="movie-detail">
                         <Detail 
-                            addToFav={this.props.addToFav} 
+                            addToFav={props.addToFav} 
                             movie={movie} 
-                            detail={this.props.detail} 
-                            getMoviesDetail={this.props.getMoviesDetail} 
+                            detail={props.detail} 
+                            getMoviesDetail={props.getMoviesDetail} 
                         />
                         <Recommendations 
                             movie={movie} 
                             recommendations={recommendations} 
-                            getRecommendations={this.props.getRecommendations}
+                            getRecommendations={props.getRecommendations}
                         />
                     </div>
                 );
             }
-        }
 }
 
 MovieDetail.propTypes = {

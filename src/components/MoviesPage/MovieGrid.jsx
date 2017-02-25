@@ -2,12 +2,11 @@ import React, {Component} from 'react';
 import Movie from './Movie.jsx';
 import InfiniteScroll from 'react-infinite-scroller';
 
-class MovieGrid extends Component{
+const MovieGrid = (props) => {
     
-    render(){
-        const { movies, addToFav, hasMore } = this.props;
-        const { genres } = this.props.genres;
-        const load = hasMore ? this.props.getPopularMovies : () => movies
+        const { movies, addToFav, hasMore } = props;
+        const { genres } = props.genres;
+        const load = hasMore ? props.getPopularMovies : () => movies
         return (
             <InfiniteScroll
             initialLoad={hasMore}
@@ -22,7 +21,6 @@ class MovieGrid extends Component{
                 </div>
             </InfiniteScroll> 
             );
-        }
 }
 
 MovieGrid.propTypes = {

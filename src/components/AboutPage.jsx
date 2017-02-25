@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
-class AboutPage extends Component{
-    render(){
+const AboutPage = () => {
         return(
             <div className="about-page">
                 <div className="about-info">
@@ -29,7 +28,6 @@ class AboutPage extends Component{
                 </div>
             </div>
         );
-    }
 }
 
 export default AboutPage;

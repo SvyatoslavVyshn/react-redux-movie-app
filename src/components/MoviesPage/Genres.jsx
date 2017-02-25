@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 
-class Genres extends Component{
-    render(){
-        const { genres } = this.props;
-        const { genreID } = this.props;
+const Genres = (props) => {
+        const { genres, genreID } = props;
         const genre = genres.filter( (genre) => genre.id === genreID );
             if(genres){
                 return(
@@ -16,7 +14,6 @@ class Genres extends Component{
                     <p>None</p>
                 </div>
             }
-    }
 }
 
 export default Genres;

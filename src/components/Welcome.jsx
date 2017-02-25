@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 
-class Welcome extends Component{
-    render(){
+const Welcome = () => {
         const style = { color: '#fff', fontSize: '15px', textDecoration: 'none' }
         return(
             <div className="welcome-page">
@@ -45,6 +44,5 @@ class Welcome extends Component{
             </div>
         );
     }
-}
 
 export default Welcome;
