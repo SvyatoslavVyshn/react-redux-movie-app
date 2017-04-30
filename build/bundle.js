@@ -32274,7 +32274,8 @@
 	        }
 	    }, {
 	        key: 'handleMovieSearch',
-	        value: function handleMovieSearch() {
+	        value: function handleMovieSearch(e) {
+	            e.preventDefault();
 	            this.props.handleSearch(this.state.text);
 	            this.props.onLoadingStop();
 	            this.setState({ error: null });
@@ -32308,7 +32309,7 @@
 	                    { className: 'search-controls' },
 	                    _react2['default'].createElement(
 	                        'form',
-	                        { action: '', onSubmit: text ? this.handleMovieSearch : this.handleError },
+	                        { onSubmit: text ? this.handleMovieSearch : this.handleError },
 	                        _react2['default'].createElement('input', { type: 'text',
 	                            placeholder: 'Search Movie...',
 	                            value: text,
