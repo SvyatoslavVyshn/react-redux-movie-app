@@ -20,7 +20,8 @@ class SearchBar extends Component{
         this.setState({text: e.target.value})
     }
 
-    handleMovieSearch(){
+    handleMovieSearch(e){
+        e.preventDefault();
         this.props.handleSearch(this.state.text);
         this.props.onLoadingStop();
         this.setState({error: null})
@@ -43,7 +44,7 @@ class SearchBar extends Component{
         return(
             <div className="search-bar">
                 <div className="search-controls">
-                        <form action="" onSubmit={ text ? this.handleMovieSearch : this.handleError}>
+                        <form onSubmit={ text ? this.handleMovieSearch : this.handleError}>
                             <input type="text" 
                             placeholder="Search Movie..." 
                             value={text}
