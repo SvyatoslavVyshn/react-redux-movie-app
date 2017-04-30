@@ -1,19 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const Genres = (props) => {
         const { genres, genreID } = props;
-        const genre = genres.filter( (genre) => genre.id === genreID );
-            if(genres){
-                return(
+        return(
             <div className="genres">
-                <p>{genre[0].name}</p>
+                {genres.map( (genre, i) => { if(genre.id === genreID) return <p key={i}>{genre.name}</p> } ) }
             </div>
-            );
-            }else{
-                <div className="genres">
-                    <p>None</p>
-                </div>
-            }
+        );
+}
+
+Genres.propTypes = {
+    genres: PropTypes.array.isRequired,
+    genreID: PropTypes.number.isRequired
 }
 
 export default Genres;

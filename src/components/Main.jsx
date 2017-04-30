@@ -3,7 +3,7 @@ import Nav from './Nav.jsx';
 
 class Main extends Component{
     componentWillMount(){
-        this.props.getPopularMovies(1);
+        this.props.getPopularMovies();
         this.props.getGenres();
     }
     render(){

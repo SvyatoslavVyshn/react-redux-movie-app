@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import MovieGrid from './MovieGrid.jsx';
 import SearchBar from './SearchBar.jsx';
 import Favs from './Favs.jsx';
+import PropTypes from 'prop-types';
 
 class MoviesPage extends Component{
 
@@ -35,17 +36,23 @@ class MoviesPage extends Component{
                     <Favs deleteFav={deleteFav} />
                     <SearchBar 
                     handleSearch={handleSearch} 
-                    cancelSearch={cancelSearch} 
                     onLoadingStop={this.handleLoadingStop} 
                     onLoadingStart={this.handleLoadingStart}
+                    movies={movies}
+                    cancelSearch={cancelSearch}
                     />
 
-                    <MovieGrid {...this.props} hasMore={this.state.hasMore} movies={movies} />
+                    <MovieGrid {...this.props} hasMore={this.state.hasMore} />
                 </div>
             );
         }
     }
 }
 
+MoviesPage.propTypes = {
+    movies: PropTypes.array,
+    handleSearch: PropTypes.func,
+    deleteFav: PropTypes.func
+}
 
 export default MoviesPage;

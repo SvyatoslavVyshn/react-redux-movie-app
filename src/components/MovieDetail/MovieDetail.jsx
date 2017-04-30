@@ -1,36 +1,40 @@
 import React, { Component } from 'react';
 import Detail from './Detail.jsx';
 import Recommendations from './Recommendations.jsx';
+import PropTypes from 'prop-types';
 
+class MovieDetail extends Component {
+        componentWillReceiveProps(nexProps){
+            const { movieId } = this.props.params
 
-const MovieDetail = (props) => {
-        const { movies, recommendations } = props;
-        const { movieId } = props.params;
-        const i = movies.findIndex( (movie) => movie.id == movieId );
-        const movie = movies[i];
-        if(!movies || !movie){
-            return <h1 className="text-center">LOADING...</h1>
-            }else{    
+            if( movieId !== nexProps.params.movieId){
+                window.location.reload()
+            }
+        }
+        
+        render(){
+            const { recommendations } = this.props;
+            const { movieId } = this.props.params;  
                 return (
                     <div className="movie-detail">
                         <Detail 
-                            addToFav={props.addToFav} 
-                            movie={movie} 
-                            detail={props.detail} 
-                            getMoviesDetail={props.getMoviesDetail} 
+                            addToFav={this.props.addToFav}
+                            movieId={movieId}
+                            detail={this.props.detail} 
+                            getMoviesDetail={this.props.getMoviesDetail} 
                         />
                         <Recommendations 
-                            movie={movie} 
+                            movieId={movieId} 
                             recommendations={recommendations} 
-                            getRecommendations={props.getRecommendations}
+                            getRecommendations={this.props.getRecommendations}
                         />
                     </div>
                 );
-            }
+        }
 }
 
 MovieDetail.propTypes = {
-    movies: React.PropTypes.array
+    movies: PropTypes.array
 }
 
 

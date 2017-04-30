@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import Genres from './Genres.jsx';
+import PropTypes from 'prop-types';
 
 const Movie = (props) => {
         const { movie, genres, i } = props;
@@ -14,7 +15,7 @@ const Movie = (props) => {
                         </button>
                         <Link to={`/movies/${movie.id}`} style={style} >
                             <h2 className="text-center title">{movie.title}</h2>
-                            {movie.genre_ids.map( (genreID, i) => <Genres key={i} genreID={genreID} genres={genres} /> )}      
+                            {movie ? movie.genre_ids.map( (genreID, i) => <Genres key={i} genreID={genreID} genres={genres} /> ) : <p>Loading...</p> }      
                             <img src={posterURL} alt="" className="poster"/>   
                         </Link>
                     </div>
@@ -23,8 +24,9 @@ const Movie = (props) => {
 }
 
 Movie.propTypes = {
-    movie: React.PropTypes.object.isRequired,
-    genres: React.PropTypes.array.isRequired
+    movie: PropTypes.object.isRequired,
+    genres: PropTypes.array.isRequired,
+    i: PropTypes.number
 }
 
 export default Movie;

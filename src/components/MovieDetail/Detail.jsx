@@ -1,18 +1,29 @@
 import React, { Component } from 'react';
 
 class Detail extends Component{
-    componentWillMount(){
-        const { movie } = this.props;
-        this.props.getMoviesDetail(movie.id);
+    constructor () {
+        super();
+
+        this.renderDetails = this.renderDetails.bind(this);
     }
+    
+    componentWillMount(){
+        const { movieId } = this.props;
+        this.props.getMoviesDetail(movieId);
+    }
+
+    renderDetails(items) {
+        return items ? items.map( (item, i) => <h6 key={i}>{item.name}</h6> )  : <h6>Loading</h6>
+    }
+
     render(){
         const { movie } = this.props;
         const { detail } = this.props;
         const posterURL = detail.poster_path ? `https://image.tmdb.org/t/p/w500/${detail.poster_path}` : 'images/image-not.jpg';
             return(
             <div className="detail">
-                <button className="btn btn-primary btn-block fav-btn" onClick={this.props.addToFav.bind(null,  this.props.movie)}>
-                    <h6 style={{color: '#fff'}}><span className="glyphicon glyphicon-heart"></span>  Add to favorite</h6>
+                <button className="btn btn-primary btn-block" onClick={this.props.addToFav.bind(null, detail)}>
+                    <h6 style={{color: '#fff'}}><span className="glyphicon glyphicon-heart"></span>Add to favorite</h6>
                 </button>
                 <div className="headers">
                     <h2 className="text-center">{detail.title}</h2>
@@ -34,9 +45,7 @@ class Detail extends Component{
                         
                         <div className="genres">
                             <h4>Genres:</h4> 
-                            { 
-                                detail.genres ? detail.genres.map( (genre, i) => <h6 key={i}>{genre.name}</h6>) : <h6 className="text-center">Loading...</h6>
-                            }
+                            { this.renderDetails(detail.genres) }
                         </div>
                     </div>
                 </div>
@@ -45,18 +54,14 @@ class Detail extends Component{
                         
                         <div className="production-companies">
                             <h4>Production companies:</h4> 
-                            { 
-                                detail.production_companies ? detail.production_companies.map( (company, i) => <h6 key={i}>{company.name}</h6>) : <h6 className="text-center">Loading...</h6> 
-                            }
+                            { this.renderDetails(detail.production_companies) }
                         </div>
 
                         <hr/>
                         
                         <div className="production-countries">
                             <h4>Production countries:</h4> 
-                            { 
-                                detail.production_countries ? detail.production_countries.map( (country, i) => <h6 key={i}>{country.name}</h6>) : <h6 className="text-center">Loading...</h6>
-                            }
+                            { this.renderDetails(detail.production_countries) }
                         </div>
                         
                         <hr/>
@@ -64,7 +69,7 @@ class Detail extends Component{
                         <div className="spoken-languages">
                             <h4>Spoken Languages:</h4> 
                             { 
-                                detail.spoken_languages ? detail.spoken_languages.map( (language, i) => <h6 key={i}>{language.name}</h6>) : <h6 className="text-center">Loading...</h6>
+                                this.renderDetails(detail.spoken_languages)
                             }
                         </div>
             </div>

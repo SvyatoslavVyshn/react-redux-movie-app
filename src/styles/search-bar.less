@@ -2,12 +2,10 @@
     background-color: @bg-white;
     width: 100%;
     padding: 10px;
-    border-bottom: 1px solid @border;
     margin: 50px auto;
 
     .error{
         text-align: center;
-        color: @error;
         font-size: 20px;
     }
 
@@ -16,7 +14,7 @@
         overflow: hidden;
         input{
             float: left;
-            width: 85%;
+            width: 97%;
             background-color:@bg-white;
             outline: 0;
             padding: 10px;
@@ -30,59 +28,32 @@
         .clear{
             text-align: center;
             float: left;
-            width: 5%;
+            width: 3%;
             font-size: 30px;
             cursor: pointer;
-        }
-
-        .search-button{
-            float: left;
-            width: 10%;
-            padding: 10px;
-            font-size: 15px;
-            font-weight: bold;
-            background-color: @green1; 
-            color: @bg-white;
-            border: none;
         }
     }
 
 }
 
-@media screen and (max-width: 1275px){
-    .search-bar .search-controls .search-button{
-        font-size: 12px;
-        width: 15%;
-    }     
-    .search-bar .search-controls input{
-        width: 80%;
-    }   
-}
 
-@media screen and (max-width: 510px){
-    .search-bar .search-controls .search-button{
-        font-size: 12px;
-        width: 10%;
-    }  
+@media screen and (max-width: 675px){
     .search-bar .search-controls input{
-        width: 85%;
-        font-size: 15px;
+        width: 95%;
+        font-size: 20px;
     } 
     .search-bar .search-controls .clear{
-        font-size: 15px;
+        font-size: 25px;
+        width: 5%;
     }
 }
 
 @media screen and (max-width: 385px){
-    .search-bar .search-controls .search-button{
-        font-size: 10px;
-        width: 20%;
-        padding: 0;
-    }  
     .search-bar .search-controls input{
-        width: 75%;
+        width: 90%;
     } 
    .search-bar .search-controls .clear{
-        font-size: 10px;
+        font-size: 20px;
+        width: 10%;
    }
 }

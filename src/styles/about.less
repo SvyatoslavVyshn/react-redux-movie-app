@@ -2,9 +2,9 @@
     height: 100vh;
     background-color: @bg-white;
     color: @text-color;
-    .about-info{
-        width: 50%;
-        margin: 0 auto;
+    width: 50%;
+    margin: 0 auto;
+        
         .about-header{color: @text-color; text-align: center; margin: 40px; font-size: 65px;}
         .about-content{
             width: 100%;
@@ -27,25 +27,24 @@
                     a{
                         text-decoration: none;
                     }
-                }
             }
         }
     }
 }
 
 @media screen and (max-width: 705px){
-    .about-page .about-info{
+    .about-page{
         width: 75%;
     }
-    .about-page .about-info .about-header{
+    .about-page .about-header{
         font-size: 35px;
     }   
 
-    .about-page .about-info .about-content .about-description{
+    .about-page .about-content .about-description{
         font-size: 15px;
     }
 
-    .about-page .about-info .about-content .used-tools .tool{
+    .about-page .about-content .used-tools .tool{
         font-size: 15px;
     }
 }

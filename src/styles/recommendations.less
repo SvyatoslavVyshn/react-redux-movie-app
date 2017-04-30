@@ -10,29 +10,27 @@
     .single{
         width: 90%;
         padding: 10px;
-        margin: 0 55px;
+        margin: 0 auto;
         height: 150px;
         display: flex; 
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        flex-wrap: nowrap;
+        justify-content: space-around;
         cursor: pointer;
         border-bottom: 1px solid @border; 
         
         &:hover{
             background-color: @aliceblue; 
         }
-
         h5{
-            margin: auto;
             font-size: 25px;
             font-weight: bold;
-            width: 60%;
+            width: 80%;
             color: @text-color;
         }
         img{
+            height: 100px;
             width: 10%;
-            flex-basis: 50px;
         }
     }
 }
