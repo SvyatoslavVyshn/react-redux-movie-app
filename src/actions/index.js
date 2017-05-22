@@ -1,21 +1,21 @@
-import { RECEIVE_POPULAR_MOVIES, RECEIVE_POPULAR_MOVIES_ERROR, 
-         
+import { RECEIVE_POPULAR_MOVIES, RECEIVE_POPULAR_MOVIES_ERROR,
+
          RECEIVE_DETAIL, RECEIVE_DETAIL_ERROR,
-         
+
          RECEIVE_RECOMMENDATIONS, RECEIVE_RECOMMENDATIONS_ERROR,
-         
+
          RECEIVE_GENRES, RECEIVE_GENRES_ERROR,
-         
+
          ADD_TO_FAV, RECEIVE_QUERY,
-         
+
          RECEIVE_QUERY_ERROR, DELETE_FAV,
-         
+
          CANCEL_SEARCH } from '../constants/constants';
 
 import axios from 'axios';
 
 const API_URL = "https://api.themoviedb.org/3/movie/";
-const API_KEY = "5d9af60e2f284c1aa7133ac326b0cbd4"; 
+const API_KEY = "5d9af60e2f284c1aa7133ac326b0cbd4";
 
 
 //Get Popular Movies Function
@@ -105,11 +105,5 @@ export function handleSearch (query) {
             .catch((err) => {
                 dispatch({type: RECEIVE_QUERY_ERROR, payload: err})
             })
-    }
-}
-
-export function cancelSearch () {
-    return {
-        type:  CANCEL_SEARCH
     }
 }

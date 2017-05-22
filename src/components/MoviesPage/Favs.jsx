@@ -22,7 +22,7 @@ class Favs extends Component{
     renderFavs(){
         const favorites = loadState();
         const posterURL = 'https://image.tmdb.org/t/p/w300/';
-        return favorites.favs.map( (fav, i) => 
+        return favorites.favs.map( (fav, i) =>
             <div className="fav" key={i}>
                 <img src={`${posterURL}${fav.poster_path}`}/>
                 <p>{fav.title}</p>
@@ -37,7 +37,7 @@ class Favs extends Component{
                 <button className="btn btn-block btn-success" onClick={this.handleFavsShow}>Your Favorites</button>
                 <div className="fav-container container" style={ this.state.expanded ? {display: 'block'} : {display: 'none'} }>
                        {favorites.favs.length == 0 && <h5 className="text-center placeholder">Nothing here yet...</h5>}
-                    
+
                        {this.renderFavs()}
                 </div>
             </div>

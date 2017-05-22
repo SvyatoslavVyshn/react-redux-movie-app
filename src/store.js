@@ -7,8 +7,9 @@ import rootReducer from './reducers/index';
 import { loadState, saveState } from './localStorage';
 
 const middleware = applyMiddleware(thunk, logger());
+const presistedState = loadState();
 
-const store = createStore(rootReducer, middleware);
+const store = createStore(rootReducer, presistedState, middleware);
 
 store.subscribe(() => {
     saveState({favs: store.getState().favs});

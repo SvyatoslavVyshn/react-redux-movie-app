@@ -26,20 +26,19 @@ class MoviesPage extends Component{
     }
 
     render(){
-        const { movies, handleSearch, deleteFav, cancelSearch } = this.props;
+        const { movies, handleSearch, deleteFav } = this.props;
         const { genres } = this.props.genres;
         if(!movies || !genres){
             return <h1 className="text-center">LOADING...</h1>
         }else{
-            return(   
+            return(
                 <div className="movies-page container-fluid">
                     <Favs deleteFav={deleteFav} />
-                    <SearchBar 
-                    handleSearch={handleSearch} 
-                    onLoadingStop={this.handleLoadingStop} 
+                    <SearchBar
+                    handleSearch={handleSearch}
+                    onLoadingStop={this.handleLoadingStop}
                     onLoadingStart={this.handleLoadingStart}
                     movies={movies}
-                    cancelSearch={cancelSearch}
                     />
 
                     <MovieGrid {...this.props} hasMore={this.state.hasMore} />

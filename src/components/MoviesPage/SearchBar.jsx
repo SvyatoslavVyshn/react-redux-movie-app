@@ -17,7 +17,7 @@ class SearchBar extends Component{
     }
 
     handleTextChange(e){
-        this.setState({text: e.target.value})
+        this.setState({text: e.target.value});
     }
 
     handleMovieSearch(e){
@@ -28,25 +28,24 @@ class SearchBar extends Component{
     }
 
     handleSearchActive(){
-        this.setState({text: '', error:''});
-        this.props.onLoadingStart();
-        this.props.cancelSearch();
+        window.location.reload();
     }
 
-    handleError(){
-        this.setState({error: 'Enter Movie Name', showErr:true})
+    handleError(e){
+        e.preventDefault();
+        this.setState({error: 'Enter Movie Name', showErr:true});
     }
 
-    render(){ 
+    render(){
         const { text, showErr } = this.state;
-        const styleX = text.length > 0 ? { display: 'block' } : {display: 'none'}
-        const styleErr = showErr ? { display: 'block' } : {display: 'none'}
+        const styleX = text.length > 0 ? { display: 'block' } : {display: 'none'};
+        const styleErr = showErr ? { display: 'block' } : {display: 'none'};
         return(
             <div className="search-bar">
                 <div className="search-controls">
                         <form onSubmit={ text ? this.handleMovieSearch : this.handleError}>
-                            <input type="text" 
-                            placeholder="Search Movie..." 
+                            <input type="text"
+                            placeholder="Search Movie..."
                             value={text}
                             onChange={this.handleTextChange}
                             />

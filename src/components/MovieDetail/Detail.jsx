@@ -6,7 +6,7 @@ class Detail extends Component{
 
         this.renderDetails = this.renderDetails.bind(this);
     }
-    
+
     componentWillMount(){
         const { movieId } = this.props;
         this.props.getMoviesDetail(movieId);
@@ -42,39 +42,39 @@ class Detail extends Component{
 
                         <h6 className="budget">Budget: {detail.budget}</h6>
                         <hr/>
-                        
+
                         <div className="genres">
-                            <h4>Genres:</h4> 
+                            <h4>Genres:</h4>
                             { this.renderDetails(detail.genres) }
                         </div>
                     </div>
                 </div>
-            
+
                         <hr/>
-                        
+
                         <div className="production-companies">
-                            <h4>Production companies:</h4> 
+                            <h4>Production companies:</h4>
                             { this.renderDetails(detail.production_companies) }
                         </div>
 
                         <hr/>
-                        
+
                         <div className="production-countries">
-                            <h4>Production countries:</h4> 
+                            <h4>Production countries:</h4>
                             { this.renderDetails(detail.production_countries) }
                         </div>
-                        
+
                         <hr/>
 
                         <div className="spoken-languages">
-                            <h4>Spoken Languages:</h4> 
-                            { 
+                            <h4>Spoken Languages:</h4>
+                            {
                                 this.renderDetails(detail.spoken_languages)
                             }
                         </div>
             </div>
             )
-    }    
+    }
 }
 
 export default Detail;

@@ -4,14 +4,14 @@
     background-color: @bg1;
     margin: 20px auto;
     overflow: hidden;
-    height: 100%;    
+    height: auto;
     .detail{
         background-color: @bg-white;
         width: 85%;
         margin: 0 auto;
         .headers{
             margin: 20px 0;
-            border-bottom: 1px solid @border; 
+            border-bottom: 1px solid @border;
             h2{
                 color: @text-color;
                 padding: 10px;
@@ -21,10 +21,10 @@
                 padding: 10px;
             }
         } //headers-end
-    
-    
+
+
         .detail-poster{
-            width: 95%;
+            width: 100%;
             margin: 0 auto;
         }
 
@@ -34,7 +34,7 @@
             .release-date{
                 font-size: 20px;
                 color: @text-color;
-            } 
+            }
             .overview{
                 font-size: 15px;
                 line-height: 25px;
@@ -55,11 +55,11 @@
                     padding: 5px;
                     background-color: @bg1;
                     color: @bg-white;
-                    border-radius: 10px; 
+                    border-radius: 10px;
                 }
             }//genres end
         }// detail-container end
-    
+
 
             .production-countries, .spoken-languages, .production-companies{
                 margin: 20px auto;
@@ -72,9 +72,8 @@
                     background-color: @green1;
                     color: @bg-white;
                     border-radius: 10px;
-                    text-align: center; 
+                    text-align: center;
                 }
             } //production-countries, spoken-languages, production-companies end
     }//detail end
 }//movie-detail end
-
