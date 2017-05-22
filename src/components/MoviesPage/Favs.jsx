@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { loadState } from '../../localStorage.js';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router';
 
 class Favs extends Component{
     constructor(props){
@@ -24,8 +25,10 @@ class Favs extends Component{
         const posterURL = 'https://image.tmdb.org/t/p/w300/';
         return favorites.favs.map( (fav, i) =>
             <div className="fav" key={i}>
-                <img src={`${posterURL}${fav.poster_path}`}/>
-                <p>{fav.title}</p>
+                <Link to={`/movies/${fav.id}`}>
+                  <img src={`${posterURL}${fav.poster_path}`}/>
+                  <p>{fav.title}</p>
+                </Link>
                 <span className="delete" onClick={this.props.deleteFav.bind(null, i)}>X</span>
             </div> )
     }
