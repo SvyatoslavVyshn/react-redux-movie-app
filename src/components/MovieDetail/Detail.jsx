@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Popup from '../Popup.jsx';
 
 class Detail extends Component{
     constructor () {
@@ -22,9 +23,12 @@ class Detail extends Component{
         const posterURL = detail.poster_path ? `https://image.tmdb.org/t/p/w500/${detail.poster_path}` : 'images/image-not.jpg';
             return(
             <div className="detail">
-                <button className="btn btn-primary btn-block" onClick={this.props.addToFav.bind(null, detail)}>
+                <button className="btn btn-primary btn-block" onClick={() => this.props.addToFav(detail)}>
                     <h6 style={{color: '#fff'}}><span className="glyphicon glyphicon-heart"></span>Add to favorite</h6>
                 </button>
+
+                <Popup />
+
                 <div className="headers">
                     <h2 className="text-center">{detail.title}</h2>
                     <h4 className="text-center">{detail.tagline}</h4>

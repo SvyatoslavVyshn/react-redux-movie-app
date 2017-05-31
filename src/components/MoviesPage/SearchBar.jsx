@@ -45,7 +45,7 @@ class SearchBar extends Component{
                 <div className="search-controls">
                         <form onSubmit={ text ? this.handleMovieSearch : this.handleError}>
                             <input type="text"
-                            placeholder="Search Movie..."
+                            placeholder="Fill the input field and press ENTER for search..."
                             value={text}
                             onChange={this.handleTextChange}
                             />

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import MovieGrid from './MovieGrid.jsx';
 import SearchBar from './SearchBar.jsx';
 import Favs from './Favs.jsx';
+import Popup from '../Popup.jsx';
 import PropTypes from 'prop-types';
 
 class MoviesPage extends Component{
@@ -34,13 +35,13 @@ class MoviesPage extends Component{
             return(
                 <div className="movies-page container-fluid">
                     <Favs deleteFav={deleteFav} />
+                    <Popup />
                     <SearchBar
                     handleSearch={handleSearch}
                     onLoadingStop={this.handleLoadingStop}
                     onLoadingStart={this.handleLoadingStart}
                     movies={movies}
                     />
-
                     <MovieGrid {...this.props} hasMore={this.state.hasMore} />
                 </div>
             );

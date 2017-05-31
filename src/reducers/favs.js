@@ -2,12 +2,24 @@ import { ADD_TO_FAV, DELETE_FAV } from '../constants/constants';
 
 const initialState = [];
 
+function hidePopup () {
+  let popup = document.getElementById('myPopup');
+    popup.classList.remove("show");
+}
+
+function addFav (action) {
+  let popup = document.getElementById('myPopup');
+    popup.classList.add("show");
+    setTimeout(hidePopup, 4000);
+    return action.item;
+}
+
 function favs (state = initialState, action){
     switch(action.type) {
         case ADD_TO_FAV: {
             return[
                 ...state,
-                action.item
+                addFav(action)
             ]
             break;
         }

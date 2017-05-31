@@ -13,10 +13,11 @@ const Movie = (props) => {
                         <button className="btn btn-info btn-block fav-btn" onClick={props.addToFav.bind(null, movie)}>
                             <span className="glyphicon glyphicon-heart"></span> Add to favorites
                         </button>
+
                         <Link to={`/movies/${movie.id}`} style={style} >
                             <h2 className="text-center title">{movie.title}</h2>
-                            {movie ? movie.genre_ids.map( (genreID, i) => <Genres key={i} genreID={genreID} genres={genres} /> ) : <p>Loading...</p> }      
-                            <img src={posterURL} alt="" className="poster"/>   
+                            {movie ? movie.genre_ids.map( (genreID, i) => <Genres key={i} genreID={genreID} genres={genres} /> ) : <p>Loading...</p> }
+                            <img src={posterURL} alt="" className="poster"/>
                         </Link>
                     </div>
                 </div>

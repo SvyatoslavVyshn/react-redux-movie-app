@@ -2,7 +2,7 @@
     color: @bg-white;
     .welcome-block{
         background-color: @bg1;
-        background-image: linear-gradient(to bottom right,  @bg1, @main-violet, @end-gradient); 
+        background-image: linear-gradient(to bottom right,  @bg1, @main-violet, @end-gradient);
         min-height: 100vh;
         overflow: hidden;
         text-align: center;
@@ -10,22 +10,30 @@
         padding-top: 10%;
         .welcome-header{color: @bg-white; font-size: 65px; text-shadow: 2px 4px 16px @text-color;}
         .welcome-message{
-            font-size: 20px; 
+            font-size: 20px;
             line-height: 65px;
             margin-top: 20px;
         }
         .one{
            font-size: 35px;
         }
+        button{
+          background: transparent;
+          border: 2px solid @bg-white;
+
+          &:hover{
+            background-color: @main-violet;
+          }
+        }
     }
     .features-block{
         .welcome-block;
         .features-header{.welcome-header}
-        background-image: linear-gradient(to bottom left,  @end-gradient, @blue-gradient, @blue-gradient-end); 
+        background-image: linear-gradient(to bottom left,  @end-gradient, @blue-gradient, @blue-gradient-end);
         .features-container{
             width: 75%;
             margin: 5% auto;
-            display: flex; 
+            display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -36,7 +44,7 @@
                     margin: 5% auto;
                 }
                 .feature-description{
-                    font-size:20px; 
+                    font-size:20px;
                 }
             }
         }
@@ -56,8 +64,8 @@
         font-size: 20px;
         line-height: 35px;
     }
-    
-    
+
+
     .welcome-page .features-block .features-header{
         font-size: 35px;
     }
